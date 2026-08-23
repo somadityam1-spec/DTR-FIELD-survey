@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp"
+    android:height="120dp"
+    android:viewportWidth="120"
+    android:viewportHeight="120">
+
+    <!-- White Circular Container Background -->
+    <path
+        android:pathData="M60,6 A54,54 0 1 0 60,114 A54,54 0 1 0 60,6 Z"
+        android:fillColor="#FFFFFF" />
+
+    <!-- Outer Ring: Blue Arc (Left & Bottom) -->
+    <path
+        android:pathData="M38,28 C22,42 22,68 38,82 C47,89 56,90 65,89"
+        android:strokeColor="#0F4C81"
+        android:strokeWidth="3.6"
+        android:strokeLineCap="round" />
+
+    <!-- Outer Ring: Green Arc (Top & Right) -->
+    <path
+        android:pathData="M43,25 C58,18 85,23 94,42 C101,58 96,76 85,85"
+        android:strokeColor="#16A34A"
+        android:strokeWidth="3.6"
+        android:strokeLineCap="round" />
+
+    <!-- 1. DTR Transformer (Left) -->
+    <path
+        android:pathData="M38,28 L38,34 M43,27 L43,34 M47,28 L47,34"
+        android:strokeColor="#334155"
+        android:strokeWidth="2"
+        android:strokeLineCap="round" />
+    <path
+        android:pathData="M30,27 C30,26 37,26 37,27 L37,31 C37,32 30,32 30,31 Z"
+        android:fillColor="#475569" />
+    <path
+        android:pathData="M29,34 L53,34 L53,59 L29,59 Z"
+        android:fillColor="#1E293B" />
+    <path
+        android:pathData="M31,36 L31,57 M34,36 L34,57 M36,36 L36,57 M49,36 L49,57 M51,36 L51,57"
+        android:strokeColor="#334155"
+        android:strokeWidth="1.4" />
+    <path
+        android:pathData="M38,37 L50,37 C51,37 51.5,37.5 51.5,38.5 L51.5,52.5 C51.5,53.5 51,54 50,54 L38,54 C37,54 36.5,53.5 36.5,52.5 L36.5,38.5 C36.5,37.5 37,37 38,37 Z"
+        android:fillColor="#E2E8F0" />
+    <path
+        android:pathData="M44,41 L41.5,45.5 L44.5,45.5 L43,50 L47,44.5 L44,44.5 Z"
+        android:fillColor="#0284C7" />
+
+    <!-- 2. Survey Checklist Clipboard (Right) -->
+    <path
+        android:pathData="M60,28 C60,26.5 61.5,25.5 63,25.5 L82,25.5 C83.5,25.5 85,26.5 85,28 L85,62 C85,63.5 83.5,64.5 82,64.5 L63,64.5 C61.5,64.5 60,63.5 60,62 Z"
+        android:fillColor="#0F4C81" />
+    <path
+        android:pathData="M67.5,24.5 L77.5,24.5 C78.5,24.5 79,25 79,26 L79,28.5 L66,28.5 L66,26 C66,25 66.5,24.5 67.5,24.5 Z"
+        android:fillColor="#0284C7" />
+    <path
+        android:pathData="M62,29 L83,29 L83,61 L62,61 Z"
+        android:fillColor="#FFFFFF" />
+    <path
+        android:pathData="M65,33 L80,33"
+        android:strokeColor="#0F4C81"
+        android:strokeWidth="2"
+        android:strokeLineCap="round" />
+    <!-- Checkmarks -->
+    <path
+        android:pathData="M64,38 L66.5,40.5 L69.5,37"
+        android:strokeColor="#16A34A"
+        android:strokeWidth="1.6"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
+    <path
+        android:pathData="M72,38.5 L80,38.5"
+        android:strokeColor="#94A3B8"
+        android:strokeWidth="1.6"
+        android:strokeLineCap="round" />
+    <path
+        android:pathData="M64,43.5 L66.5,46 L69.5,42.5"
+        android:strokeColor="#16A34A"
+        android:strokeWidth="1.6"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
+    <path
+        android:pathData="M72,44 L80,44"
+        android:strokeColor="#94A3B8"
+        android:strokeWidth="1.6"
+        android:strokeLineCap="round" />
+    <path
+        android:pathData="M64,49 L66.5,51.5 L69.5,48"
+        android:strokeColor="#16A34A"
+        android:strokeWidth="1.6"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
+    <path
+        android:pathData="M72,49.5 L80,49.5"
+        android:strokeColor="#94A3B8"
+        android:strokeWidth="1.6"
+        android:strokeLineCap="round" />
+    <path
+        android:pathData="M64,54.5 L66.5,57 L69.5,53.5"
+        android:strokeColor="#16A34A"
+        android:strokeWidth="1.6"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
+    <path
+        android:pathData="M72,55 L80,55"
+        android:strokeColor="#94A3B8"
+        android:strokeWidth="1.6"
+        android:strokeLineCap="round" />
+
+    <!-- 3. Agricultural Plot (Bottom Center) -->
+    <path
+        android:pathData="M42,63 L78,63 L85,74 L35,74 Z"
+        android:fillColor="#22C55E" />
+    <path
+        android:pathData="M53,63 L49,74 M67,63 L71,74 M38,69 L82,69"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="0.9" />
+
+    <!-- 4. Location Marker Pin (Center) -->
+    <path
+        android:pathData="M60,51 C55,51 51,55 51,60 C51,65.5 60,73 60,73 C60,73 69,65.5 69,60 C69,55 65,51 60,51 Z"
+        android:fillColor="#0284C7" />
+    <path
+        android:pathData="M60,56.5 C58.1,56.5 56.5,58.1 56.5,60 C56.5,61.9 58.1,63.5 60,63.5 C61.9,63.5 63.5,61.9 63.5,60 C63.5,58.1 61.9,56.5 60,56.5 Z"
+        android:fillColor="#FFFFFF" />
+
+    <!-- 5. DTR Typography -->
+    <path
+        android:pathData="M35,79 L42,79 C45.5,79 47,80.8 47,83.5 C47,86.2 45.5,88 42,88 L35,88 Z M38,81.5 L38,85.5 L41.5,85.5 C43,85.5 44,84.9 44,83.5 C44,82.1 43,81.5 41.5,81.5 Z"
+        android:fillColor="#0F294A" />
+    <path
+        android:pathData="M49,79 L60,79 L60,81.5 L56,81.5 L56,88 L53,88 L53,81.5 L49,81.5 Z"
+        android:fillColor="#0F294A" />
+    <path
+        android:pathData="M62,79 L70,79 C72.8,79 74.5,80.5 74.5,82.6 C74.5,84.2 73.4,85.2 71.7,85.5 L75,88 L71.5,88 L68.7,85.8 L65,85.8 L65,88 L62,88 Z M65,81.3 L65,83.8 L69.5,83.8 C70.6,83.8 71.4,83.2 71.4,82.6 C71.4,81.9 70.6,81.3 69.5,81.3 Z"
+        android:fillColor="#0F294A" />
+
+    <!-- Accent Lines around SURVEY -->
+    <path
+        android:pathData="M29,91.5 L40,91.5"
+        android:strokeColor="#0284C7"
+        android:strokeWidth="1.2"
+        android:strokeLineCap="round" />
+    <path
+        android:pathData="M43,90 L77,90"
+        android:strokeColor="#0284C7"
+        android:strokeWidth="1" />
+    <path
+        android:pathData="M80,91.5 L91,91.5"
+        android:strokeColor="#16A34A"
+        android:strokeWidth="1.2"
+        android:strokeLineCap="round" />
+
+    <!-- Bottom Pill: DATA • TRACK • REPORT -->
+    <path
+        android:pathData="M33,96 L87,96 C89.5,96 91.5,98 91.5,100 C91.5,102 89.5,104 87,104 L33,104 C30.5,104 28.5,102 28.5,100 C28.5,98 30.5,96 33,96 Z"
+        android:fillColor="#0F294A" />
+    <!-- Dots inside pill -->
+    <path
+        android:pathData="M48,100 C48,100.7 47.3,101.3 46.5,101.3 C45.7,101.3 45,100.7 45,100 C45,99.3 45.7,98.7 46.5,98.7 C47.3,98.7 48,99.3 48,100 Z M75,100 C75,100.7 74.3,101.3 73.5,101.3 C72.7,101.3 72,100.7 72,100 C72,99.3 72.7,98.7 73.5,98.7 C74.3,98.7 75,99.3 75,100 Z"
+        android:fillColor="#22C55E" />
+</vector>

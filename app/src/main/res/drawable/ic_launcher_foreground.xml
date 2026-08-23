@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Group centered inside the 66dp - 72dp safe zone -->
+    <group
+        android:translateX="0"
+        android:translateY="0">
+
+        <!-- Outer Ring: Blue Arc (Left & Bottom) -->
+        <path
+            android:pathData="M34,26 C20,38 20,62 34,74 C42,80 50,81 58,80"
+            android:strokeColor="#0F4C81"
+            android:strokeWidth="3.2"
+            android:strokeLineCap="round" />
+
+        <!-- Outer Ring: Green Arc (Top & Right) -->
+        <path
+            android:pathData="M38,23 C52,17 76,21 84,38 C90,52 86,68 76,76"
+            android:strokeColor="#16A34A"
+            android:strokeWidth="3.2"
+            android:strokeLineCap="round" />
+
+        <!-- 1. DTR Transformer (Left) -->
+        <!-- Bushings / Insulators on Top -->
+        <path
+            android:pathData="M34,26 L34,31 M38,25 L38,31 M42,26 L42,31"
+            android:strokeColor="#334155"
+            android:strokeWidth="1.8"
+            android:strokeLineCap="round" />
+        <!-- Conservator Tank -->
+        <path
+            android:pathData="M27,25 C27,24 33,24 33,25 L33,28 C33,29 27,29 27,28 Z"
+            android:fillColor="#475569" />
+        <!-- Transformer Main Tank Body -->
+        <path
+            android:pathData="M26,31 L48,31 L48,53 L26,53 Z"
+            android:fillColor="#1E293B" />
+        <!-- Cooling Fins -->
+        <path
+            android:pathData="M28,33 L28,51 M30,33 L30,51 M32,33 L32,51 M44,33 L44,51 M46,33 L46,51"
+            android:strokeColor="#334155"
+            android:strokeWidth="1.2" />
+        <!-- Transformer Front Nameplate -->
+        <path
+            android:pathData="M34,34 L45,34 C46,34 46.5,34.5 46.5,35.5 L46.5,47.5 C46.5,48.5 46,49 45,49 L34,49 C33,49 32.5,48.5 32.5,47.5 L32.5,35.5 C32.5,34.5 33,34 34,34 Z"
+            android:fillColor="#E2E8F0" />
+        <!-- Lightning Bolt on Nameplate -->
+        <path
+            android:pathData="M39.5,38 L37,42 L40,42 L38.5,46 L42,41 L39.5,41 Z"
+            android:fillColor="#0284C7" />
+
+        <!-- 2. Survey Checklist Clipboard (Right) -->
+        <!-- Clipboard Backplate -->
+        <path
+            android:pathData="M54,26 C54,24.5 55.5,23.5 57,23.5 L74,23.5 C75.5,23.5 77,24.5 77,26 L77,56 C77,57.5 75.5,58.5 74,58.5 L57,58.5 C55.5,58.5 54,57.5 54,56 Z"
+            android:fillColor="#0F4C81" />
+        <!-- Top Clip -->
+        <path
+            android:pathData="M61,22.5 L70,22.5 C71,22.5 71.5,23 71.5,24 L71.5,26.5 L59.5,26.5 L59.5,24 C59.5,23 60,22.5 61,22.5 Z"
+            android:fillColor="#0284C7" />
+        <!-- Clipboard Sheet of Paper -->
+        <path
+            android:pathData="M56,27 L75,27 L75,55 L56,55 Z"
+            android:fillColor="#FFFFFF" />
+        <!-- Clipboard Header bar (SURVEY) -->
+        <path
+            android:pathData="M59,30 L72,30"
+            android:strokeColor="#0F4C81"
+            android:strokeWidth="1.8"
+            android:strokeLineCap="round" />
+        <!-- Checkbox Row 1 -->
+        <path
+            android:pathData="M58,34.5 L60,36.5 L63,33.5"
+            android:strokeColor="#16A34A"
+            android:strokeWidth="1.4"
+            android:strokeLineCap="round"
+            android:strokeLineJoin="round" />
+        <path
+            android:pathData="M65,35 L72,35"
+            android:strokeColor="#94A3B8"
+            android:strokeWidth="1.4"
+            android:strokeLineCap="round" />
+        <!-- Checkbox Row 2 -->
+        <path
+            android:pathData="M58,39.5 L60,41.5 L63,38.5"
+            android:strokeColor="#16A34A"
+            android:strokeWidth="1.4"
+            android:strokeLineCap="round"
+            android:strokeLineJoin="round" />
+        <path
+            android:pathData="M65,40 L72,40"
+            android:strokeColor="#94A3B8"
+            android:strokeWidth="1.4"
+            android:strokeLineCap="round" />
+        <!-- Checkbox Row 3 -->
+        <path
+            android:pathData="M58,44.5 L60,46.5 L63,43.5"
+            android:strokeColor="#16A34A"
+            android:strokeWidth="1.4"
+            android:strokeLineCap="round"
+            android:strokeLineJoin="round" />
+        <path
+            android:pathData="M65,45 L72,45"
+            android:strokeColor="#94A3B8"
+            android:strokeWidth="1.4"
+            android:strokeLineCap="round" />
+        <!-- Checkbox Row 4 -->
+        <path
+            android:pathData="M58,49.5 L60,51.5 L63,48.5"
+            android:strokeColor="#16A34A"
+            android:strokeWidth="1.4"
+            android:strokeLineCap="round"
+            android:strokeLineJoin="round" />
+        <path
+            android:pathData="M65,50 L72,50"
+            android:strokeColor="#94A3B8"
+            android:strokeWidth="1.4"
+            android:strokeLineCap="round" />
+
+        <!-- 3. Agricultural / Grid Land Plot at Base -->
+        <path
+            android:pathData="M38,57 L70,57 L76,67 L32,67 Z"
+            android:fillColor="#22C55E" />
+        <path
+            android:pathData="M48,57 L44,67 M60,57 L64,67 M35,62 L73,62"
+            android:strokeColor="#FFFFFF"
+            android:strokeWidth="0.8" />
+
+        <!-- 4. Map Location Marker Pin (Center) -->
+        <path
+            android:pathData="M54,46 C49.5,46 46,49.5 46,54 C46,59 54,66 54,66 C54,66 62,59 62,54 C62,49.5 58.5,46 54,46 Z"
+            android:fillColor="#0284C7" />
+        <!-- Pin White Inner Center -->
+        <path
+            android:pathData="M54,51 C52.3,51 51,52.3 51,54 C51,55.7 52.3,57 54,57 C55.7,57 57,55.7 57,54 C57,52.3 55.7,51 54,51 Z"
+            android:fillColor="#FFFFFF" />
+
+        <!-- 5. DTR Wordmark (Bold Vector Glyph Paths) -->
+        <!-- Letter 'D' -->
+        <path
+            android:pathData="M32,71 L38,71 C41,71 42.5,72.5 42.5,75 C42.5,77.5 41,79 38,79 L32,79 Z M34.5,73 L34.5,77 L37.5,77 C39,77 40,76.5 40,75 C40,73.5 39,73 37.5,73 Z"
+            android:fillColor="#0F294A" />
+        <!-- Letter 'T' -->
+        <path
+            android:pathData="M44,71 L54,71 L54,73 L50.3,73 L50.3,79 L47.7,79 L47.7,73 L44,73 Z"
+            android:fillColor="#0F294A" />
+        <!-- Letter 'R' -->
+        <path
+            android:pathData="M56,71 L63,71 C65.5,71 67,72.3 67,74.2 C67,75.6 66,76.5 64.5,76.8 L67.5,79 L64.5,79 L62,77 L58.5,77 L58.5,79 L56,79 Z M58.5,73 L58.5,75.2 L62.5,75.2 C63.5,75.2 64.2,74.7 64.2,74.1 C64.2,73.5 63.5,73 62.5,73 Z"
+            android:fillColor="#0F294A" />
+
+        <!-- 'SURVEY' Sub-heading with accent lines -->
+        <path
+            android:pathData="M26,82.5 L36,82.5"
+            android:strokeColor="#0284C7"
+            android:strokeWidth="1"
+            android:strokeLineCap="round" />
+        <!-- Letters 'SURVEY' stylized path -->
+        <path
+            android:pathData="M39,81 L69,81"
+            android:strokeColor="#0284C7"
+            android:strokeWidth="0.8" />
+        <path
+            android:pathData="M72,82.5 L82,82.5"
+            android:strokeColor="#16A34A"
+            android:strokeWidth="1"
+            android:strokeLineCap="round" />
+
+        <!-- Bottom Pill: DATA • TRACK • REPORT -->
+        <path
+            android:pathData="M30,86 L78,86 C80,86 81.5,87.5 81.5,89.5 C81.5,91.5 80,93 78,93 L30,93 C28,93 26.5,91.5 26.5,89.5 C26.5,87.5 28,86 30,86 Z"
+            android:fillColor="#0F294A" />
+        <!-- Decorative indicator dots inside pill -->
+        <path
+            android:pathData="M43,89.5 C43,90 42.5,90.5 42,90.5 C41.5,90.5 41,90 41,89.5 C41,89 41.5,88.5 42,88.5 C42.5,88.5 43,89 43,89.5 Z M66,89.5 C66,90 65.5,90.5 65,90.5 C64.5,90.5 64,90 64,89.5 C64,89 64.5,88.5 65,88.5 C65.5,88.5 66,89 66,89.5 Z"
+            android:fillColor="#22C55E" />
+    </group>
+</vector>

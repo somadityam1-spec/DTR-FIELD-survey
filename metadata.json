@@ -1,0 +1,6 @@
+{
+  "name": "Field Supervisor Report",
+  "description": "Offline field inspection and DTR report app for electrical power distribution supervisors with Excel export and WhatsApp/Email sharing.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
