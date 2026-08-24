@@ -29,6 +29,25 @@ https://<your-github-username>.github.io/<your-repo-name>/
 
 ---
 
+## 🔧 Fix: Seeing an Old Version After Pushing to GitHub?
+
+If your deployed website on GitHub Pages still shows the previous version or doesn't reflect your newest changes:
+
+1. **Check GitHub Actions Tab**:
+   - Go to your repository on GitHub and click the **Actions** tab.
+   - Verify that the workflow `Deploy to GitHub Pages` is green (✅ Success). If it is in progress (🟡 Yellow), wait 30 seconds for it to finish.
+
+2. **Verify Pages Source in GitHub Settings**:
+   - Go to **Settings** ➔ **Pages**.
+   - Under **Build and deployment** ➔ **Source**, ensure **GitHub Actions** is selected. (This uses the clean, instant `.github/workflows/pages.yml` deployment instead of the old legacy Jekyll builder).
+
+3. **Bypass Browser Cache**:
+   - Browsers aggressively save HTML files in cache.
+   - In your browser on the live site, press **`Ctrl + Shift + R`** (Windows/Linux) or **`Cmd + Shift + R`** (Mac).
+   - On mobile or desktop, you can also simply click the top header button: **`⚡ Check Update`** which clears cached assets and reloads the latest version with cache-busting parameters.
+
+---
+
 ## ⚡ Key Features
 
 1. **DTR Infrastructure Audit**:
