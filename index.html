@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>DTR SURVEY | Distribution Transformer & LT Line Inspection Suite</title>
-    <meta name="description" content="Offline field inspection and DTR audit app for electrical power distribution supervisors with real-time load analytics, GPS geo-tagging, Excel export, and WhatsApp sharing.">
+    <meta name="description" content="Offline Field Inspection & DTR Audit App for Electrical Distribution Engineers with DTR Structure details, Consumer breakdown, Real-Time Load Diagnostics, GPS Geo-tagging, Excel export, and WhatsApp sharing.">
     <meta name="theme-color" content="#4A6741">
     <link rel="manifest" href="./manifest.json">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -47,8 +47,8 @@
             --danger-text: #991B1B;
             --danger-border: #FCA5A5;
 
-            --radius-lg: 20px;
-            --radius-md: 14px;
+            --radius-lg: 18px;
+            --radius-md: 12px;
             --radius-sm: 8px;
             --shadow-sm: 0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
             --shadow-md: 0 4px 12px rgba(0,0,0,0.08);
@@ -90,19 +90,20 @@
             align-items: center;
             justify-content: space-between;
             gap: 12px;
+            flex-wrap: wrap;
         }
 
         .brand-block {
             display: flex;
             align-items: center;
-            gap: 12px;
+            gap: 10px;
             text-decoration: none;
             color: inherit;
         }
 
         .brand-logo {
-            width: 44px;
-            height: 44px;
+            width: 42px;
+            height: 42px;
             border-radius: 12px;
             background: #FFFFFF;
             border: 1px solid var(--outline-border);
@@ -115,7 +116,7 @@
         }
 
         .brand-text h1 {
-            font-size: 1.1rem;
+            font-size: 1.15rem;
             font-weight: 800;
             color: var(--text-primary);
             letter-spacing: -0.02em;
@@ -130,10 +131,31 @@
             display: block;
         }
 
+        .user-device-chip {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            background: var(--lavender-container);
+            border: 1px solid var(--lavender-border);
+            color: var(--lavender-text);
+            padding: 5px 12px;
+            border-radius: 999px;
+            font-size: 0.78rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.15s ease;
+        }
+
+        .user-device-chip:hover {
+            transform: translateY(-1px);
+            background: #E1CEFF;
+        }
+
         .topbar-actions {
             display: flex;
             align-items: center;
             gap: 8px;
+            flex-wrap: wrap;
         }
 
         /* Button System */
@@ -144,8 +166,8 @@
             gap: 6px;
             padding: 8px 14px;
             border-radius: var(--radius-md);
-            font-size: 0.88rem;
-            font-weight: 600;
+            font-size: 0.85rem;
+            font-weight: 700;
             cursor: pointer;
             border: 1px solid transparent;
             transition: all 0.15s ease;
@@ -200,15 +222,15 @@
 
         .btn-sm {
             padding: 5px 10px;
-            font-size: 0.78rem;
+            font-size: 0.76rem;
             border-radius: var(--radius-sm);
         }
 
         .btn-icon {
-            padding: 8px;
+            padding: 6px;
             border-radius: 50%;
-            width: 36px;
-            height: 36px;
+            width: 34px;
+            height: 34px;
         }
 
         /* App Container */
@@ -230,7 +252,7 @@
 
         .metric-card {
             border-radius: var(--radius-lg);
-            padding: 16px;
+            padding: 14px 18px;
             border: 1.5px solid transparent;
             box-shadow: var(--shadow-sm);
             display: flex;
@@ -260,12 +282,12 @@
         }
 
         .metric-val {
-            font-size: 1.75rem;
+            font-size: 1.7rem;
             font-weight: 800;
             line-height: 1;
         }
         .metric-label {
-            font-size: 0.78rem;
+            font-size: 0.75rem;
             font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 0.04em;
@@ -273,8 +295,8 @@
             margin-top: 4px;
         }
         .metric-icon {
-            font-size: 1.8rem;
-            opacity: 0.8;
+            font-size: 1.7rem;
+            opacity: 0.85;
         }
 
         /* Search & Filters */
@@ -308,7 +330,7 @@
             background: transparent;
             outline: none;
             width: 100%;
-            font-size: 0.9rem;
+            font-size: 0.88rem;
             font-family: inherit;
             color: var(--text-primary);
             padding-left: 8px;
@@ -322,10 +344,10 @@
         }
 
         .filter-pill {
-            padding: 6px 12px;
+            padding: 5px 12px;
             border-radius: 999px;
-            font-size: 0.78rem;
-            font-weight: 600;
+            font-size: 0.76rem;
+            font-weight: 700;
             border: 1px solid var(--outline-border);
             background: #FFFFFF;
             color: var(--text-secondary);
@@ -350,7 +372,7 @@
             background-color: #FFFFFF;
             border: 1px solid var(--outline-border);
             border-radius: var(--radius-lg);
-            padding: 18px;
+            padding: 16px;
             box-shadow: var(--shadow-sm);
             transition: transform 0.2s ease, box-shadow 0.2s ease;
             display: flex;
@@ -369,7 +391,7 @@
             align-items: flex-start;
             justify-content: space-between;
             gap: 8px;
-            margin-bottom: 8px;
+            margin-bottom: 4px;
         }
 
         .dtr-code {
@@ -379,9 +401,9 @@
         }
 
         .dtr-location {
-            font-size: 0.85rem;
+            font-size: 0.82rem;
             color: var(--text-muted);
-            margin-bottom: 12px;
+            margin-bottom: 10px;
             display: flex;
             align-items: center;
             gap: 4px;
@@ -394,7 +416,7 @@
             padding: 3px 8px;
             border-radius: 6px;
             font-size: 0.72rem;
-            font-weight: 700;
+            font-weight: 800;
             text-transform: uppercase;
             letter-spacing: 0.03em;
         }
@@ -407,7 +429,7 @@
             display: grid;
             grid-template-columns: repeat(4, 1fr);
             gap: 6px;
-            margin: 12px 0;
+            margin: 10px 0;
             background: var(--bg-card-subtle);
             padding: 8px;
             border-radius: var(--radius-md);
@@ -419,8 +441,8 @@
         }
 
         .phase-pill .p-name {
-            font-size: 0.68rem;
-            font-weight: 700;
+            font-size: 0.65rem;
+            font-weight: 800;
             display: block;
         }
 
@@ -431,9 +453,48 @@
 
         .phase-pill .p-val {
             font-family: 'JetBrains Mono', monospace;
-            font-size: 0.88rem;
+            font-size: 0.85rem;
             font-weight: 700;
             color: var(--text-primary);
+        }
+
+        /* Structure chips summary */
+        .structure-tags-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 4px;
+            margin: 8px 0;
+        }
+
+        .struct-tag {
+            font-size: 0.7rem;
+            font-weight: 600;
+            padding: 2px 7px;
+            border-radius: 4px;
+            background: var(--bg-card-subtle);
+            border: 1px solid var(--outline-border);
+            color: var(--text-secondary);
+        }
+
+        .struct-tag.alert {
+            background: var(--danger-bg);
+            border-color: var(--danger-border);
+            color: var(--danger-text);
+            font-weight: 700;
+        }
+
+        .consumer-strip {
+            background-color: var(--coral-container);
+            border: 1px solid var(--coral-border);
+            color: var(--coral-text);
+            border-radius: var(--radius-sm);
+            padding: 4px 8px;
+            font-size: 0.72rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
         }
 
         .surveyor-strip {
@@ -442,9 +503,9 @@
             color: var(--lavender-text);
             border-radius: var(--radius-sm);
             padding: 4px 8px;
-            font-size: 0.75rem;
+            font-size: 0.72rem;
             font-weight: 700;
-            margin-bottom: 12px;
+            margin-bottom: 10px;
             display: flex;
             align-items: center;
             gap: 6px;
@@ -455,12 +516,12 @@
             align-items: center;
             justify-content: space-between;
             border-top: 1px solid var(--outline-subtle);
-            padding-top: 12px;
+            padding-top: 10px;
             margin-top: 6px;
             gap: 6px;
         }
 
-        /* Form Modal / Screen */
+        /* Modal Overlay & Screens */
         .form-overlay {
             display: none;
             position: fixed;
@@ -468,7 +529,7 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: rgba(0, 0, 0, 0.5);
+            background: rgba(0, 0, 0, 0.55);
             backdrop-filter: blur(4px);
             z-index: 200;
             padding: 16px;
@@ -494,7 +555,7 @@
 
         .modal-header {
             background: #FFFFFF;
-            padding: 16px 20px;
+            padding: 14px 20px;
             border-bottom: 1px solid var(--outline-border);
             display: flex;
             align-items: center;
@@ -505,7 +566,7 @@
         }
 
         .modal-body {
-            padding: 20px;
+            padding: 18px;
             display: flex;
             flex-direction: column;
             gap: 16px;
@@ -514,7 +575,7 @@
         .form-section-card {
             background: #FFFFFF;
             border-radius: var(--radius-lg);
-            padding: 18px;
+            padding: 16px;
             border: 1.5px solid var(--outline-border);
         }
 
@@ -539,7 +600,7 @@
             display: flex;
             align-items: center;
             gap: 10px;
-            margin-bottom: 14px;
+            margin-bottom: 12px;
         }
 
         .section-badge {
@@ -552,8 +613,9 @@
         }
 
         .section-title-text {
-            font-size: 0.95rem;
-            font-weight: 700;
+            font-size: 0.92rem;
+            font-weight: 800;
+            letter-spacing: -0.01em;
         }
 
         .form-grid-2 {
@@ -562,9 +624,15 @@
             gap: 12px;
         }
 
+        .form-grid-3 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 10px;
+        }
+
         .form-grid-4 {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
             gap: 10px;
         }
 
@@ -575,13 +643,13 @@
         }
 
         .form-group label {
-            font-size: 0.78rem;
+            font-size: 0.76rem;
             font-weight: 700;
             color: var(--text-secondary);
         }
 
         .form-control {
-            padding: 9px 12px;
+            padding: 8px 12px;
             border-radius: var(--radius-md);
             border: 1px solid var(--outline-border);
             font-size: 0.88rem;
@@ -616,24 +684,48 @@
             gap: 8px;
         }
 
-        /* Detail / View Modal */
+        /* Detail Modal */
+        .detail-section-block {
+            background: #FFFFFF;
+            border-radius: var(--radius-md);
+            padding: 14px;
+            border: 1px solid var(--outline-border);
+            margin-bottom: 12px;
+        }
+
+        .detail-section-title {
+            font-size: 0.82rem;
+            font-weight: 800;
+            color: var(--green-primary);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 8px;
+            border-bottom: 1px solid var(--outline-subtle);
+            padding-bottom: 4px;
+        }
+
         .detail-item-row {
             display: flex;
             align-items: center;
             justify-content: space-between;
-            padding: 6px 0;
+            padding: 5px 0;
             border-bottom: 1px dashed var(--outline-subtle);
-            font-size: 0.85rem;
+            font-size: 0.84rem;
+        }
+
+        .detail-item-row:last-child {
+            border-bottom: none;
         }
 
         .detail-item-row .d-label {
             color: var(--text-muted);
-            font-weight: 500;
+            font-weight: 600;
         }
 
         .detail-item-row .d-val {
             font-weight: 700;
             color: var(--text-primary);
+            text-align: right;
         }
 
         /* Empty State */
@@ -695,7 +787,7 @@
         <div class="topbar-content">
             <a href="#" class="brand-block">
                 <div class="brand-logo">
-                    <svg viewBox="0 0 108 108" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 36px; height: 36px;">
+                    <svg viewBox="0 0 108 108" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 34px; height: 34px;">
                         <circle cx="54" cy="54" r="50" fill="#FFFFFF"/>
                         <path d="M34 26C20 38 20 62 34 74C42 80 50 81 58 80" stroke="#0F4C81" stroke-width="4" stroke-linecap="round"/>
                         <path d="M38 23C52 17 76 21 84 38C90 52 86 68 76 76" stroke="#16A34A" stroke-width="4" stroke-linecap="round"/>
@@ -718,6 +810,13 @@
                     <span class="tagline">DATA • TRACK • REPORT</span>
                 </div>
             </a>
+
+            <!-- DEVICE USER PROFILE CHIP (Point #3) -->
+            <button class="user-device-chip" onclick="openProfileModal()" title="Click to update your device Name & Designation">
+                <span>👤</span>
+                <span id="header-user-display">Rajesh Sharma (Junior Engineer)</span>
+                <span style="font-size: 0.7rem; opacity: 0.7;">⚙️ Edit</span>
+            </button>
 
             <div class="topbar-actions">
                 <button class="btn btn-outline btn-sm" onclick="exportToCSV()" title="Export all surveys to Excel CSV">
@@ -761,10 +860,10 @@
             </div>
             <div class="metric-card tone-lavender">
                 <div>
-                    <div class="metric-val" id="metric-neutral">0</div>
-                    <div class="metric-label">High Neutral (&gt;25A)</div>
+                    <div class="metric-val" id="metric-consumers">0</div>
+                    <div class="metric-label">Total Consumers</div>
                 </div>
-                <div class="metric-icon">🔌</div>
+                <div class="metric-icon">👥</div>
             </div>
         </div>
 
@@ -772,15 +871,16 @@
         <div class="controls-bar">
             <div class="search-box">
                 <span>🔍</span>
-                <input type="text" id="search-input" placeholder="Search by DTR code, location, surveyor name, agency..." oninput="renderSurveys()">
+                <input type="text" id="search-input" placeholder="Search by DTR code, location, surveyor, consumer type..." oninput="renderSurveys()">
             </div>
             <div class="filter-pills">
                 <button class="filter-pill active" data-filter="All" onclick="setFilter('All')">All</button>
                 <button class="filter-pill" data-filter="Overload" onclick="setFilter('Overload')">⚠️ Overload</button>
                 <button class="filter-pill" data-filter="HighNeutral" onclick="setFilter('HighNeutral')">🔌 High Neutral</button>
-                <button class="filter-pill" data-filter="Agriculture" onclick="setFilter('Agriculture')">🌾 Agriculture</button>
                 <button class="filter-pill" data-filter="Village" onclick="setFilter('Village')">🏘️ Village</button>
-                <button class="filter-pill" data-filter="Industrial" onclick="setFilter('Industrial')">🏭 Industrial</button>
+                <button class="filter-pill" data-filter="IND" onclick="setFilter('IND')">🏭 IND</button>
+                <button class="filter-pill" data-filter="STW" onclick="setFilter('STW')">🌾 STW</button>
+                <button class="filter-pill" data-filter="COM" onclick="setFilter('COM')">🏪 COM</button>
             </div>
         </div>
 
@@ -791,11 +891,42 @@
         <div id="empty-state" class="empty-state" style="display: none;">
             <div style="font-size: 3rem;">📋</div>
             <h3>No Inspection Records Found</h3>
-            <p>No transformer surveys match your search filter. Create a new inspection or restore sample data.</p>
+            <p>No transformer surveys match your filter. Record a new inspection or restore sample data.</p>
             <button class="btn btn-primary" onclick="openNewSurveyModal()">➕ Record New Inspection</button>
         </div>
 
     </main>
+
+    <!-- DEVICE USER PROFILE MODAL (Point #3) -->
+    <div id="profile-overlay" class="form-overlay">
+        <div class="form-modal" style="max-width: 480px;">
+            <div class="modal-header">
+                <div>
+                    <h3 style="font-weight: 800; font-size: 1.1rem;">👤 Device Surveyor Profile</h3>
+                    <p style="font-size: 0.78rem; color: var(--text-muted);">Set your name & designation on this device</p>
+                </div>
+                <button class="btn btn-outline btn-icon" onclick="closeProfileModal()">✕</button>
+            </div>
+            <form id="profile-form" onsubmit="handleProfileSubmit(event)" class="modal-body">
+                <div class="form-group">
+                    <label>Your Name *</label>
+                    <input type="text" id="prof-name" class="form-control" required placeholder="e.g. Rajesh Sharma">
+                </div>
+                <div class="form-group">
+                    <label>Designation *</label>
+                    <input type="text" id="prof-designation" class="form-control" required placeholder="e.g. Junior Engineer / Line Supervisor">
+                </div>
+                <div class="form-group">
+                    <label>Sub-Division / Feeder Office (Optional)</label>
+                    <input type="text" id="prof-division" class="form-control" placeholder="e.g. North Zone DISCOM / Feeder 4">
+                </div>
+                <div style="display: flex; gap: 8px; justify-content: flex-end; margin-top: 10px;">
+                    <button type="button" class="btn btn-outline" onclick="closeProfileModal()">Cancel</button>
+                    <button type="submit" class="btn btn-primary">💾 Save Profile on Device</button>
+                </div>
+            </form>
+        </div>
+    </div>
 
     <!-- FORM MODAL (NEW / EDIT SURVEY) -->
     <div id="form-overlay" class="form-overlay">
@@ -803,7 +934,7 @@
             <div class="modal-header">
                 <div>
                     <h3 id="modal-title" style="font-weight: 800; font-size: 1.15rem;">Record New Inspection</h3>
-                    <p style="font-size: 0.78rem; color: var(--text-muted);">Fill out transformer, phase currents, and survey team details</p>
+                    <p style="font-size: 0.78rem; color: var(--text-muted);" id="modal-surveyor-note">Surveyor: Rajesh Sharma (Junior Engineer)</p>
                 </div>
                 <button class="btn btn-outline btn-icon" onclick="closeFormModal()">✕</button>
             </div>
@@ -811,7 +942,7 @@
             <form id="survey-form" onsubmit="handleFormSubmit(event)" class="modal-body">
                 <input type="hidden" id="form-id">
 
-                <!-- 1. DTR INFRASTRUCTURE -->
+                <!-- 1. DTR DETAILS -->
                 <div class="form-section-card tone-sage">
                     <div class="section-head">
                         <span class="section-badge">01. DTR DETAILS</span>
@@ -863,10 +994,140 @@
                     </div>
                 </div>
 
-                <!-- 2. LOAD & PHASE CURRENT -->
+                <!-- 2. DTR STRUCTURE DETAILS (Point #2) -->
+                <div class="form-section-card">
+                    <div class="section-head">
+                        <span class="section-badge" style="background: var(--amber-container); color: var(--amber-text);">02. DTR STRUCTURE DETAILS</span>
+                        <span class="section-title-text">Kiosk, Arresters, Male-Female, Socket & Cables</span>
+                    </div>
+                    <div class="form-grid-3">
+                        <div class="form-group">
+                            <label>LT Kiosk Status *</label>
+                            <select id="f-ltKioskStatus" class="form-control">
+                                <option value="Yes" selected>Yes</option>
+                                <option value="No">No</option>
+                                <option value="Damaged">Damaged</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Lightning Arrester Status *</label>
+                            <select id="f-lightningArresterStatus" class="form-control">
+                                <option value="Yes" selected>Yes</option>
+                                <option value="No">No</option>
+                                <option value="Damaged">Damaged</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Male Female Status *</label>
+                            <select id="f-maleFemaleStatus" class="form-control">
+                                <option value="Ok" selected>Ok</option>
+                                <option value="Damaged">Damaged</option>
+                                <option value="adjustment needed">adjustment needed</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-grid-3" style="margin-top: 10px;">
+                        <div class="form-group">
+                            <label>Socket Status *</label>
+                            <select id="f-socketStatus" class="form-control">
+                                <option value="Ok" selected>Ok</option>
+                                <option value="Damaged">Damaged</option>
+                                <option value="adjustment needed">adjustment needed</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Earthing *</label>
+                            <select id="f-earthingStatus" class="form-control">
+                                <option value="Yes" selected>Yes</option>
+                                <option value="No">No</option>
+                                <option value="Damaged">Damaged</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>DTR Cable Status *</label>
+                            <select id="f-dtrCableStatus" class="form-control">
+                                <option value="OK" selected>OK</option>
+                                <option value="damaged">damaged</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-grid-2" style="margin-top: 10px;">
+                        <div class="form-group">
+                            <label>LT Line Status *</label>
+                            <select id="f-ltLineStatus" class="form-control">
+                                <option value="AB cable" selected>AB cable</option>
+                                <option value="Bare conductor">Bare conductor</option>
+                                <option value="PVC cable">PVC cable</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>LT Pole Condition</label>
+                            <select id="f-ltPoleCondition" class="form-control">
+                                <option value="Normal" selected>Normal (Healthy)</option>
+                                <option value="Straightening Required">Straightening Required</option>
+                                <option value="Broken / Damaged">Broken / Damaged</option>
+                                <option value="Leaning towards road">Leaning towards road / hazard</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3. CONSUMER DETAILS (Point #5) -->
+                <div class="form-section-card tone-coral">
+                    <div class="section-head">
+                        <span class="section-badge" style="background: var(--coral-container); color: var(--coral-text);">03. CONSUMER DETAILS</span>
+                        <span class="section-title-text">Consumer Types & Counts</span>
+                    </div>
+                    <div class="form-grid-2">
+                        <div class="form-group">
+                            <label>Type of DTR Consumer *</label>
+                            <select id="f-consumerType" class="form-control">
+                                <option value="Village" selected>Village</option>
+                                <option value="IND">IND (Industrial)</option>
+                                <option value="STW">STW (State Tubewell / Agri)</option>
+                                <option value="COM">COM (Commercial)</option>
+                                <option value="Single user">Single user</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>LT Line Work Required</label>
+                            <select id="f-ltLineWork" class="form-control">
+                                <option value="None" selected>None (Healthy Line)</option>
+                                <option value="Sagging Required">Sagging Required</option>
+                                <option value="Mid Gap pole required">Mid Gap pole required</option>
+                                <option value="Tree trimming needed">Tree trimming needed</option>
+                                <option value="Bracket replacement required">Bracket replacement required</option>
+                                <option value="Conductor replacement">Conductor replacement</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-grid-4" style="margin-top: 10px;">
+                        <div class="form-group">
+                            <label>1 PH Consumer (No.)</label>
+                            <input type="number" min="0" step="1" id="f-onePhConsumers" class="form-control" value="0" oninput="calculateTotalConsumers()">
+                        </div>
+                        <div class="form-group">
+                            <label>IND (No.)</label>
+                            <input type="number" min="0" step="1" id="f-indConsumers" class="form-control" value="0" oninput="calculateTotalConsumers()">
+                        </div>
+                        <div class="form-group">
+                            <label>STW (No.)</label>
+                            <input type="number" min="0" step="1" id="f-stwConsumers" class="form-control" value="0" oninput="calculateTotalConsumers()">
+                        </div>
+                        <div class="form-group">
+                            <label>3PH Consumer (No.)</label>
+                            <input type="number" min="0" step="1" id="f-threePhConsumers" class="form-control" value="0" oninput="calculateTotalConsumers()">
+                        </div>
+                    </div>
+                    <div style="font-size: 0.8rem; font-weight: 700; color: var(--coral-text); margin-top: 8px;" id="total-consumers-badge">
+                        👥 Total Connected Consumers: 0
+                    </div>
+                </div>
+
+                <!-- 4. LOAD & CURRENT MEASUREMENTS -->
                 <div class="form-section-card tone-sky">
                     <div class="section-head">
-                        <span class="section-badge" style="background: var(--sky-container); color: var(--sky-text);">02. LOAD & CURRENT</span>
+                        <span class="section-badge" style="background: var(--sky-container); color: var(--sky-text);">04. LOAD & CURRENT</span>
                         <span class="section-title-text">Phase Current Measurements (Amps)</span>
                     </div>
                     <div class="form-grid-2">
@@ -904,154 +1165,11 @@
                     </div>
                 </div>
 
-                <!-- 3. PROTECTION & HARDWARE AUDIT -->
-                <div class="form-section-card">
-                    <div class="section-head">
-                        <span class="section-badge" style="background: var(--amber-container); color: var(--amber-text);">03. PROTECTION AUDIT</span>
-                        <span class="section-title-text">Fuses, Oil, Breather & Earthing</span>
-                    </div>
-                    <div class="form-grid-2">
-                        <div class="form-group">
-                            <label>LT Protection Rating</label>
-                            <select id="f-ltProtection" class="form-control">
-                                <option value="160A HRC Fuse" selected>160A HRC Fuse</option>
-                                <option value="200A HRC Fuse">200A HRC Fuse</option>
-                                <option value="100A HRC Fuse">100A HRC Fuse</option>
-                                <option value="MCCB 200A">MCCB 200A</option>
-                                <option value="Kitkat Fuse 100A">Kitkat Fuse 100A</option>
-                                <option value="Direct / Bypassed">Direct / Bypassed Wire</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label>Protection Status</label>
-                            <select id="f-ltProtectionStatus" class="form-control">
-                                <option value="Ok" selected>Ok (Healthy)</option>
-                                <option value="Damaged">Damaged / Blown</option>
-                                <option value="Bypassed">Bypassed / Wire Jumper</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="form-grid-2" style="margin-top: 10px;">
-                        <div class="form-group">
-                            <label>Breather Silica Gel</label>
-                            <select id="f-breatherCondition" class="form-control">
-                                <option value="Good (Blue)" selected>Good (Active Blue)</option>
-                                <option value="Moisture (Pink)">Moisture Absorbed (Pink)</option>
-                                <option value="Damaged / Broken">Damaged / Broken</option>
-                                <option value="Missing">Missing</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label>Oil Leakage</label>
-                            <select id="f-oilLeakage" class="form-control">
-                                <option value="None" selected>None (Dry)</option>
-                                <option value="Minor Seepage">Minor Seepage</option>
-                                <option value="Severe Leakage">Severe Oil Leakage</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="form-grid-2" style="margin-top: 10px;">
-                        <div class="form-group">
-                            <label>Body Earthing</label>
-                            <select id="f-bodyEarthing" class="form-control">
-                                <option value="Connected (Good)" selected>Connected (Good)</option>
-                                <option value="Corroded">Corroded / High Resistance</option>
-                                <option value="Disconnected / Damaged">Disconnected / Damaged</option>
-                                <option value="Missing">Missing</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label>Neutral Earthing</label>
-                            <select id="f-neutralEarthing" class="form-control">
-                                <option value="Connected (Good)" selected>Connected (Good)</option>
-                                <option value="Damaged">Damaged / Loose</option>
-                                <option value="Disconnected">Disconnected</option>
-                                <option value="Missing">Missing</option>
-                            </select>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- 4. LT LINE & POLE AUDIT -->
-                <div class="form-section-card">
-                    <div class="section-head">
-                        <span class="section-badge">04. LT LINES</span>
-                        <span class="section-title-text">Poles, Sagging & Maintenance</span>
-                    </div>
-                    <div class="form-grid-2">
-                        <div class="form-group">
-                            <label>LT Pole Condition</label>
-                            <select id="f-ltPoleCondition" class="form-control">
-                                <option value="Normal" selected>Normal (Healthy)</option>
-                                <option value="Straightening">Straightening Required</option>
-                                <option value="Broken / Damaged">Broken / Damaged</option>
-                                <option value="Leaning towards road">Leaning towards road / hazard</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label>LT Line Work Required</label>
-                            <select id="f-ltLineWork" class="form-control">
-                                <option value="None" selected>None (Healthy Line)</option>
-                                <option value="Sagging Required">Sagging Required</option>
-                                <option value="Mid Gap pole required">Mid Gap pole required</option>
-                                <option value="Tree trimming needed">Tree trimming needed</option>
-                                <option value="Bracket required">Bracket replacement required</option>
-                                <option value="Conductor replacement">Conductor replacement</option>
-                            </select>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- 5. SURVEY TEAM & CONSUMER -->
-                <div class="form-section-card tone-coral">
-                    <div class="section-head">
-                        <span class="section-badge" style="background: var(--coral-container); color: var(--coral-text);">05. SURVEY TEAM</span>
-                        <span class="section-title-text">Who Will Survey & Personnel</span>
-                    </div>
-                    <div class="form-grid-2">
-                        <div class="form-group">
-                            <label>Who Will Survey / Surveyor Name *</label>
-                            <input type="text" id="f-surveyorName" class="form-control" required placeholder="e.g. Rajesh Sharma">
-                        </div>
-                        <div class="form-group">
-                            <label>Surveyor Designation</label>
-                            <select id="f-surveyorDesignation" class="form-control">
-                                <option value="Junior Engineer" selected>Junior Engineer</option>
-                                <option value="Line Supervisor">Line Supervisor</option>
-                                <option value="Survey Officer">Survey Officer</option>
-                                <option value="Lineman">Lineman</option>
-                                <option value="Agency Inspector">Agency Inspector</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="form-grid-2" style="margin-top: 10px;">
-                        <div class="form-group">
-                            <label>Survey Agency / Sub-division / Feeder</label>
-                            <input type="text" id="f-surveyAgency" class="form-control" placeholder="e.g. North Zone DISCOM / Feeder 4">
-                        </div>
-                        <div class="form-group">
-                            <label>Survey Date</label>
-                            <input type="date" id="f-surveyDate" class="form-control">
-                        </div>
-                    </div>
-                    <div class="form-grid-2" style="margin-top: 10px;">
-                        <div class="form-group">
-                            <label>Supervisor In-Charge / Approver</label>
-                            <input type="text" id="f-supervisorName" class="form-control" placeholder="e.g. Ramesh Kumar (Line Supervisor)">
-                        </div>
-                        <div class="form-group">
-                            <label>Consumer Type</label>
-                            <select id="f-consumerType" class="form-control">
-                                <option value="Village" selected>Village / Domestic</option>
-                                <option value="Agriculture">Agriculture / Tubewell</option>
-                                <option value="Industrial">Industrial / Commercial</option>
-                                <option value="Single user">Single User Dedicated</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="form-group" style="margin-top: 10px;">
-                        <label>Field Notes & Remarks</label>
-                        <textarea id="f-remarks" class="form-control" rows="2" placeholder="e.g. Tree branches trimmed near pole #4, load running smoothly..."></textarea>
+                <!-- 5. REMARKS -->
+                <div class="form-section-card tone-lavender">
+                    <div class="form-group">
+                        <label>Inspection Remarks & Field Observations</label>
+                        <textarea id="f-remarks" class="form-control" rows="2" placeholder="e.g. Socket needs adjustment, LT cable healthy, load balanced..."></textarea>
                     </div>
                 </div>
 
@@ -1075,7 +1193,7 @@
                 <button class="btn btn-outline btn-icon" onclick="closeDetailModal()">✕</button>
             </div>
             <div id="detail-body" class="modal-body"></div>
-            <div style="padding: 16px 20px; background: #FFFFFF; border-top: 1px solid var(--outline-border); display: flex; justify-content: space-between; gap: 8px; flex-wrap: wrap;">
+            <div style="padding: 14px 20px; background: #FFFFFF; border-top: 1px solid var(--outline-border); display: flex; justify-content: space-between; gap: 8px; flex-wrap: wrap;">
                 <div style="display: flex; gap: 8px;">
                     <button class="btn btn-coral btn-sm" id="detail-btn-wa">📲 WhatsApp</button>
                     <button class="btn btn-sky btn-sm" id="detail-btn-email">✉️ Email</button>
@@ -1092,10 +1210,18 @@
     <!-- TOAST NOTIFICATION -->
     <div id="toast" class="toast"></div>
 
-    <!-- APPLICATION LOGIC & STATE PERSISTENCE -->
+    <!-- SCRIPT APPLICATION LOGIC -->
     <script>
-        const STORAGE_KEY = 'dtr_survey_records_v2';
+        const STORAGE_KEY = 'dtr_survey_records_v3';
+        const PROFILE_KEY = 'dtr_user_profile_v1';
         let currentFilter = 'All';
+
+        // Default Device User Profile (Point #3)
+        const DEFAULT_PROFILE = {
+            name: 'Rajesh Sharma',
+            designation: 'Junior Engineer',
+            division: 'North Zone DISCOM'
+        };
 
         const SAMPLE_DATA = [
             {
@@ -1105,62 +1231,127 @@
                 dtrCapacity: '100',
                 dtrStructure: 'Double Pole (DP)',
                 gpsCoordinates: '26.8467, 80.9462',
+                // DTR Structure Details (Point #2)
+                ltKioskStatus: 'Yes',
+                lightningArresterStatus: 'Yes',
+                maleFemaleStatus: 'Ok',
+                socketStatus: 'Ok',
+                earthingStatus: 'Yes',
+                dtrCableStatus: 'OK',
+                ltLineStatus: 'AB cable',
+                ltPoleCondition: 'Normal',
+                ltLineWork: 'None',
+                // Consumer Details (Point #5)
+                consumerType: 'Village',
+                onePhConsumers: 45,
+                indConsumers: 2,
+                stwConsumers: 8,
+                threePhConsumers: 5,
+                totalConsumers: 60,
+                // Load Measurements
                 loadMeasurementDate: '2026-08-24',
                 loadMeasurementTime: '09:30 AM',
                 rCurrent: '115.0',
                 yCurrent: '108.0',
                 bCurrent: '112.0',
                 nCurrent: '14.0',
-                ltProtection: '160A HRC Fuse',
-                ltProtectionStatus: 'Ok',
-                breatherCondition: 'Good (Blue)',
-                oilLeakage: 'None',
-                oilLevel: 'Normal (3/4)',
-                bodyEarthing: 'Connected (Good)',
-                neutralEarthing: 'Connected (Good)',
-                ltPoleCondition: 'Normal',
-                ltLineWork: 'Bracket required',
-                consumerType: 'Agriculture',
+                // Device Surveyor
                 surveyorName: 'Rajesh Sharma',
                 surveyorDesignation: 'Junior Engineer',
-                surveyAgency: 'North Zone DISCOM',
-                surveyDate: '2026-08-24',
-                supervisorName: 'Field Supervisor 1',
-                remarks: 'DTR is working smoothly, tree branches trimmed near pole.',
+                remarks: 'DTR and structure healthy. LT AB cable in good condition.',
                 createdAt: Date.now() - 3600000 * 24
             },
             {
                 id: 'dtr_2',
                 dtrCode: 'DTR-IND-108',
-                dtrLocation: 'Industrial Estate Phase 2',
+                dtrLocation: 'Industrial Feeder Sector 9',
                 dtrCapacity: '250',
                 dtrStructure: 'Plinth Mounted',
                 gpsCoordinates: '26.8520, 80.9510',
+                // DTR Structure Details (Point #2)
+                ltKioskStatus: 'Damaged',
+                lightningArresterStatus: 'No',
+                maleFemaleStatus: 'adjustment needed',
+                socketStatus: 'adjustment needed',
+                earthingStatus: 'Damaged',
+                dtrCableStatus: 'damaged',
+                ltLineStatus: 'Bare conductor',
+                ltPoleCondition: 'Straightening Required',
+                ltLineWork: 'Sagging Required, Mid Gap pole required',
+                // Consumer Details (Point #5)
+                consumerType: 'IND',
+                onePhConsumers: 12,
+                indConsumers: 18,
+                stwConsumers: 0,
+                threePhConsumers: 15,
+                totalConsumers: 45,
+                // Load Measurements
                 loadMeasurementDate: '2026-08-24',
                 loadMeasurementTime: '07:45 PM',
                 rCurrent: '320.0',
                 yCurrent: '310.0',
                 bCurrent: '335.0',
                 nCurrent: '38.0',
-                ltProtection: 'MCCB 200A',
-                ltProtectionStatus: 'Damaged',
-                breatherCondition: 'Moisture (Pink)',
-                oilLeakage: 'Minor Seepage',
-                oilLevel: 'Low (1/2)',
-                bodyEarthing: 'Corroded',
-                neutralEarthing: 'Damaged',
-                ltPoleCondition: 'Straightening',
-                ltLineWork: 'Sagging Required, Mid Gap pole required',
-                consumerType: 'Industrial',
-                surveyorName: 'Amit Verma',
-                surveyorDesignation: 'Line Supervisor',
-                surveyAgency: 'Kalyanpur Feeder Survey Team',
-                surveyDate: '2026-08-24',
-                supervisorName: 'Field Supervisor 1',
-                remarks: 'Urgent attention required: High evening peak load & damaged earthing.',
+                // Device Surveyor
+                surveyorName: 'Rajesh Sharma',
+                surveyorDesignation: 'Junior Engineer',
+                remarks: 'Heavy evening load. Socket adjustment and DTR cable replacement needed urgently.',
                 createdAt: Date.now() - 3600000 * 12
             }
         ];
+
+        // Device Profile Management
+        function getUserProfile() {
+            try {
+                const data = localStorage.getItem(PROFILE_KEY);
+                if (data) return JSON.parse(data);
+            } catch (e) {
+                console.error(e);
+            }
+            localStorage.setItem(PROFILE_KEY, JSON.stringify(DEFAULT_PROFILE));
+            return DEFAULT_PROFILE;
+        }
+
+        function saveUserProfile(profile) {
+            localStorage.setItem(PROFILE_KEY, JSON.stringify(profile));
+            updateProfileUI();
+        }
+
+        function updateProfileUI() {
+            const prof = getUserProfile();
+            const el = document.getElementById('header-user-display');
+            if (el) {
+                el.textContent = `${prof.name} (${prof.designation})`;
+            }
+            const modalNote = document.getElementById('modal-surveyor-note');
+            if (modalNote) {
+                modalNote.textContent = `Surveyor: ${prof.name} (${prof.designation})`;
+            }
+        }
+
+        function openProfileModal() {
+            const prof = getUserProfile();
+            document.getElementById('prof-name').value = prof.name || '';
+            document.getElementById('prof-designation').value = prof.designation || '';
+            document.getElementById('prof-division').value = prof.division || '';
+            document.getElementById('profile-overlay').classList.add('active');
+        }
+
+        function closeProfileModal() {
+            document.getElementById('profile-overlay').classList.remove('active');
+        }
+
+        function handleProfileSubmit(e) {
+            e.preventDefault();
+            const prof = {
+                name: document.getElementById('prof-name').value.trim() || 'Surveyor',
+                designation: document.getElementById('prof-designation').value.trim() || 'Engineer',
+                division: document.getElementById('prof-division').value.trim()
+            };
+            saveUserProfile(prof);
+            closeProfileModal();
+            showToast('✅ Device profile updated successfully!');
+        }
 
         // Rated Current calculation per kVA
         function getRatedCurrent(kva) {
@@ -1168,7 +1359,7 @@
             return cap * 1.3912;
         }
 
-        // Load records from LocalStorage
+        // Local Storage Records
         function getRecords() {
             try {
                 const data = localStorage.getItem(STORAGE_KEY);
@@ -1200,6 +1391,16 @@
             renderSurveys();
         }
 
+        function calculateTotalConsumers() {
+            const c1 = parseInt(document.getElementById('f-onePhConsumers').value) || 0;
+            const ind = parseInt(document.getElementById('f-indConsumers').value) || 0;
+            const stw = parseInt(document.getElementById('f-stwConsumers').value) || 0;
+            const c3 = parseInt(document.getElementById('f-threePhConsumers').value) || 0;
+            const tot = c1 + ind + stw + c3;
+            document.getElementById('total-consumers-badge').textContent = `👥 Total Connected Consumers: ${tot}`;
+            return tot;
+        }
+
         function renderSurveys() {
             const records = getRecords();
             const query = (document.getElementById('search-input').value || '').toLowerCase().trim();
@@ -1211,46 +1412,44 @@
                     (r.dtrCode && r.dtrCode.toLowerCase().includes(query)) ||
                     (r.dtrLocation && r.dtrLocation.toLowerCase().includes(query)) ||
                     (r.surveyorName && r.surveyorName.toLowerCase().includes(query)) ||
-                    (r.surveyAgency && r.surveyAgency.toLowerCase().includes(query)) ||
-                    (r.consumerType && r.consumerType.toLowerCase().includes(query));
+                    (r.consumerType && r.consumerType.toLowerCase().includes(query)) ||
+                    (r.ltLineStatus && r.ltLineStatus.toLowerCase().includes(query));
 
                 if (!matchesQuery) return false;
 
                 const rated = getRatedCurrent(r.dtrCapacity);
-                const maxCurrent = Math.max(parseFloat(r.rCurrent) || 0, parseFloat(r.yCurrent) || 0, parseFloat(r.bCurrent) || 0);
-                const loadPct = (maxCurrent / rated) * 100;
+                const maxPh = Math.max(parseFloat(r.rCurrent)||0, parseFloat(r.yCurrent)||0, parseFloat(r.bCurrent)||0);
+                const pct = rated > 0 ? (maxPh / rated) * 100 : 0;
                 const nCur = parseFloat(r.nCurrent) || 0;
 
-                if (currentFilter === 'Overload') return loadPct >= 85;
+                if (currentFilter === 'Overload') return pct > 85;
                 if (currentFilter === 'HighNeutral') return nCur > 25;
-                if (currentFilter === 'Agriculture') return r.consumerType === 'Agriculture';
                 if (currentFilter === 'Village') return r.consumerType === 'Village';
-                if (currentFilter === 'Industrial') return r.consumerType === 'Industrial';
+                if (currentFilter === 'IND') return r.consumerType === 'IND';
+                if (currentFilter === 'STW') return r.consumerType === 'STW';
+                if (currentFilter === 'COM') return r.consumerType === 'COM';
 
                 return true;
             });
 
             // Update Metrics
-            let total = records.length;
-            let normalCount = 0;
-            let overloadCount = 0;
-            let highNeutralCount = 0;
+            let totalOverload = 0;
+            let totalNormal = 0;
+            let sumConsumers = 0;
 
             records.forEach(r => {
                 const rated = getRatedCurrent(r.dtrCapacity);
-                const maxCurrent = Math.max(parseFloat(r.rCurrent) || 0, parseFloat(r.yCurrent) || 0, parseFloat(r.bCurrent) || 0);
-                const loadPct = (maxCurrent / rated) * 100;
-                const nCur = parseFloat(r.nCurrent) || 0;
-
-                if (loadPct >= 85) overloadCount++;
-                else normalCount++;
-                if (nCur > 25) highNeutralCount++;
+                const maxPh = Math.max(parseFloat(r.rCurrent)||0, parseFloat(r.yCurrent)||0, parseFloat(r.bCurrent)||0);
+                const pct = rated > 0 ? (maxPh / rated) * 100 : 0;
+                if (pct > 85) totalOverload++;
+                else totalNormal++;
+                sumConsumers += (r.totalConsumers || ((parseInt(r.onePhConsumers)||0) + (parseInt(r.indConsumers)||0) + (parseInt(r.stwConsumers)||0) + (parseInt(r.threePhConsumers)||0)));
             });
 
-            document.getElementById('metric-total').textContent = total;
-            document.getElementById('metric-normal').textContent = normalCount;
-            document.getElementById('metric-overload').textContent = overloadCount;
-            document.getElementById('metric-neutral').textContent = highNeutralCount;
+            document.getElementById('metric-total').textContent = records.length;
+            document.getElementById('metric-normal').textContent = totalNormal;
+            document.getElementById('metric-overload').textContent = totalOverload;
+            document.getElementById('metric-consumers').textContent = sumConsumers;
 
             if (filtered.length === 0) {
                 listEl.innerHTML = '';
@@ -1261,72 +1460,70 @@
             emptyEl.style.display = 'none';
             listEl.innerHTML = filtered.map(r => {
                 const rated = getRatedCurrent(r.dtrCapacity);
-                const maxCurrent = Math.max(parseFloat(r.rCurrent) || 0, parseFloat(r.yCurrent) || 0, parseFloat(r.bCurrent) || 0);
-                const loadPct = ((maxCurrent / rated) * 100).toFixed(1);
-                
-                let statusClass = 'status-normal';
-                let statusText = `${loadPct}% Normal`;
-                if (loadPct >= 85) {
-                    statusClass = 'status-critical';
-                    statusText = `⚠️ ${loadPct}% Overload`;
-                } else if (loadPct >= 70) {
-                    statusClass = 'status-moderate';
-                    statusText = `⚡ ${loadPct}% Moderate`;
+                const maxPh = Math.max(parseFloat(r.rCurrent)||0, parseFloat(r.yCurrent)||0, parseFloat(r.bCurrent)||0);
+                const pct = rated > 0 ? ((maxPh / rated) * 100).toFixed(1) : 0;
+                const nCur = parseFloat(r.nCurrent) || 0;
+
+                let statusBadge = '<span class="status-badge status-normal">✅ Balanced</span>';
+                if (pct > 85) {
+                    statusBadge = `<span class="status-badge status-critical">⚠️ Overload ${pct}%</span>`;
+                } else if (pct > 65 || nCur > 25) {
+                    statusBadge = `<span class="status-badge status-moderate">⚡ Load ${pct}%</span>`;
                 }
+
+                const totalCons = r.totalConsumers || ((parseInt(r.onePhConsumers)||0) + (parseInt(r.indConsumers)||0) + (parseInt(r.stwConsumers)||0) + (parseInt(r.threePhConsumers)||0));
 
                 return `
                 <div class="survey-card">
                     <div>
                         <div class="card-header-row">
-                            <div>
-                                <span class="dtr-code">${escapeHtml(r.dtrCode)}</span>
-                                <span style="font-size: 0.8rem; font-weight: 700; color: var(--green-primary); margin-left: 6px;">${escapeHtml(r.dtrCapacity)} kVA</span>
-                            </div>
-                            <span class="status-badge ${statusClass}">${statusText}</span>
+                            <span class="dtr-code">${escapeHtml(r.dtrCode || 'DTR-UNKNOWN')}</span>
+                            ${statusBadge}
                         </div>
                         <div class="dtr-location">
-                            <span>📍 ${escapeHtml(r.dtrLocation || 'Unspecified')}</span>
+                            <span>📍</span>
+                            <span>${escapeHtml(r.dtrLocation || 'Unspecified Feeder')}</span>
                         </div>
 
+                        <!-- Phase Currents Row -->
                         <div class="phase-pills-row">
-                            <div class="phase-pill r">
-                                <span class="p-name">R-PHASE</span>
-                                <span class="p-val">${r.rCurrent || '0'}A</span>
-                            </div>
-                            <div class="phase-pill y">
-                                <span class="p-name">Y-PHASE</span>
-                                <span class="p-val">${r.yCurrent || '0'}A</span>
-                            </div>
-                            <div class="phase-pill b">
-                                <span class="p-name">B-PHASE</span>
-                                <span class="p-val">${r.bCurrent || '0'}A</span>
-                            </div>
-                            <div class="phase-pill n">
-                                <span class="p-name">NEUTRAL</span>
-                                <span class="p-val">${r.nCurrent || '0'}A</span>
-                            </div>
+                            <div class="phase-pill r"><span class="p-name">R PHASE</span><span class="p-val">${r.rCurrent || '0'}A</span></div>
+                            <div class="phase-pill y"><span class="p-name">Y PHASE</span><span class="p-val">${r.yCurrent || '0'}A</span></div>
+                            <div class="phase-pill b"><span class="p-name">B PHASE</span><span class="p-val">${r.bCurrent || '0'}A</span></div>
+                            <div class="phase-pill n"><span class="p-name">NEUTRAL</span><span class="p-val">${r.nCurrent || '0'}A</span></div>
                         </div>
 
-                        ${r.surveyorName ? `
+                        <!-- DTR Structure Details Chips -->
+                        <div class="structure-tags-row">
+                            <span class="struct-tag">⚡ ${r.dtrCapacity || 100} kVA (${r.dtrStructure || 'DP'})</span>
+                            <span class="struct-tag ${r.ltKioskStatus === 'Damaged' || r.ltKioskStatus === 'No' ? 'alert' : ''}">Kiosk: ${r.ltKioskStatus || 'Yes'}</span>
+                            <span class="struct-tag ${r.lightningArresterStatus === 'Damaged' || r.lightningArresterStatus === 'No' ? 'alert' : ''}">LA: ${r.lightningArresterStatus || 'Yes'}</span>
+                            <span class="struct-tag ${r.socketStatus === 'Damaged' || r.socketStatus === 'adjustment needed' ? 'alert' : ''}">Socket: ${r.socketStatus || 'Ok'}</span>
+                            <span class="struct-tag ${r.earthingStatus === 'Damaged' || r.earthingStatus === 'No' ? 'alert' : ''}">Earth: ${r.earthingStatus || 'Yes'}</span>
+                            <span class="struct-tag">Line: ${r.ltLineStatus || 'AB cable'}</span>
+                        </div>
+
+                        <!-- Consumer Strip -->
+                        <div class="consumer-strip">
+                            <span>🏷️ Type: <strong>${r.consumerType || 'Village'}</strong></span>
+                            <span>👥 Total: <strong>${totalCons} Consumers</strong> (1PH: ${r.onePhConsumers||0}, IND: ${r.indConsumers||0}, STW: ${r.stwConsumers||0}, 3PH: ${r.threePhConsumers||0})</span>
+                        </div>
+
+                        <!-- Device Surveyor attribution -->
                         <div class="surveyor-strip">
-                            <span>👷 Surveyed by: <strong>${escapeHtml(r.surveyorName)}</strong> (${escapeHtml(r.surveyorDesignation || 'Surveyor')})</span>
-                        </div>
-                        ` : ''}
-
-                        <div style="font-size: 0.76rem; color: var(--text-muted); display: flex; justify-content: space-between;">
-                            <span>🏢 ${escapeHtml(r.consumerType || 'Village')}</span>
-                            <span>📅 ${escapeHtml(r.loadMeasurementDate || r.surveyDate || '')}</span>
+                            <span>👤</span>
+                            <span>Inspected by: <strong>${escapeHtml(r.surveyorName || 'Surveyor')}</strong> (${escapeHtml(r.surveyorDesignation || 'Engineer')})</span>
                         </div>
                     </div>
 
                     <div class="card-actions-row">
-                        <div style="display: flex; gap: 4px;">
-                            <button class="btn btn-outline btn-sm" onclick="openDetailModal('${r.id}')">View Details</button>
-                            <button class="btn btn-outline btn-sm" onclick="openEditSurveyModal('${r.id}')">✏️</button>
+                        <div style="display: flex; gap: 6px;">
+                            <button class="btn btn-outline btn-sm" onclick="viewDetail('${r.id}')">🔍 View Full</button>
+                            <button class="btn btn-outline btn-sm" onclick="editSurvey('${r.id}')">✏️ Edit</button>
                         </div>
-                        <div style="display: flex; gap: 4px;">
-                            <button class="btn btn-coral btn-sm" onclick="shareWhatsApp('${r.id}')" title="Share WhatsApp Summary">📲</button>
-                            <button class="btn btn-sky btn-sm" onclick="shareEmail('${r.id}')" title="Share Email Summary">✉️</button>
+                        <div style="display: flex; gap: 6px;">
+                            <button class="btn btn-coral btn-sm" onclick="shareWhatsApp('${r.id}')" title="Share report via WhatsApp">📲 WhatsApp</button>
+                            <button class="btn btn-danger btn-sm" onclick="deleteSurvey('${r.id}')" title="Delete inspection">🗑️</button>
                         </div>
                     </div>
                 </div>
@@ -1334,81 +1531,86 @@
             }).join('');
         }
 
-        function escapeHtml(text) {
-            if (!text) return '';
-            return String(text).replace(/[&<>"']/g, function(m) {
-                return {'&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#039;'}[m];
-            });
-        }
-
-        // Live calculation inside the form
+        // Live Load calculations inside Modal
         function recalculateFormLoad() {
-            const cap = parseFloat(document.getElementById('f-dtrCapacity').value) || 100;
+            const kva = document.getElementById('f-dtrCapacity').value;
+            const rated = getRatedCurrent(kva);
             const r = parseFloat(document.getElementById('f-rCurrent').value) || 0;
             const y = parseFloat(document.getElementById('f-yCurrent').value) || 0;
             const b = parseFloat(document.getElementById('f-bCurrent').value) || 0;
             const n = parseFloat(document.getElementById('f-nCurrent').value) || 0;
 
-            const rated = cap * 1.3912;
-            const maxCur = Math.max(r, y, b);
-            const loadPct = rated > 0 ? ((maxCur / rated) * 100).toFixed(1) : 0;
+            const maxPh = Math.max(r, y, b);
+            const pct = rated > 0 ? ((maxPh / rated) * 100).toFixed(1) : '0.0';
 
-            let statusLabel = 'Normal';
-            if (loadPct >= 85) statusLabel = '⚠️ OVERLOADED';
-            else if (loadPct >= 70) statusLabel = '⚡ Moderate';
+            let loadStatus = 'Normal';
+            if (pct > 85) loadStatus = 'CRITICAL OVERLOAD';
+            else if (pct > 65) loadStatus = 'Moderate';
 
-            let neutralStatus = n > 25 ? '⚠️ High Unbalance' : 'Normal';
+            let neutralStatus = 'Normal';
+            if (n > 25) neutralStatus = 'HIGH (Unbalanced)';
 
-            const display = document.getElementById('live-calc-display');
-            display.innerHTML = `
+            document.getElementById('live-calc-display').innerHTML = `
                 <span>⚡ Rated: <strong>${rated.toFixed(1)} A</strong></span>
-                <span>📈 Load: <strong>${loadPct}% (${statusLabel})</strong></span>
+                <span>📈 Calculated Load: <strong>${pct}% (${loadStatus})</strong></span>
                 <span>🔌 Neutral: <strong>${n.toFixed(1)} A (${neutralStatus})</strong></span>
             `;
         }
 
-        // GPS Fetch
+        // GPS Live fetch
         function fetchLiveGPS() {
-            if ('geolocation' in navigator) {
-                showToast('Fetching GPS location...');
-                navigator.geolocation.getCurrentPosition(
-                    (pos) => {
-                        const coords = `${pos.coords.latitude.toFixed(5)}, ${pos.coords.longitude.toFixed(5)}`;
-                        document.getElementById('f-gpsCoordinates').value = coords;
-                        showToast(`GPS Locked: ${coords}`);
-                    },
-                    (err) => {
-                        alert('Could not retrieve GPS: ' + err.message);
-                    },
-                    { enableHighAccuracy: true, timeout: 10000 }
-                );
-            } else {
+            if (!navigator.geolocation) {
                 alert('Geolocation is not supported by your browser.');
+                return;
             }
+            showToast('📍 Acquiring device GPS coordinates...');
+            navigator.geolocation.getCurrentPosition(
+                pos => {
+                    const coords = `${pos.coords.latitude.toFixed(6)}, ${pos.coords.longitude.toFixed(6)}`;
+                    document.getElementById('f-gpsCoordinates').value = coords;
+                    showToast(`✅ GPS captured: ${coords}`);
+                },
+                err => {
+                    alert(`GPS Error (${err.code}): ${err.message}. Please allow location access or type coordinates manually.`);
+                },
+                { enableHighAccuracy: true, timeout: 10000 }
+            );
         }
 
-        // Modal Handlers
+        // Modal Open / Close
         function openNewSurveyModal() {
             document.getElementById('survey-form').reset();
             document.getElementById('form-id').value = '';
             document.getElementById('modal-title').textContent = 'Record New Inspection';
 
+            const prof = getUserProfile();
+            document.getElementById('modal-surveyor-note').textContent = `Surveyor: ${prof.name} (${prof.designation})`;
+
+            // Default dates
+            const today = new Date().toISOString().split('T')[0];
+            document.getElementById('f-measurementDate').value = today;
+
             const now = new Date();
-            document.getElementById('f-measurementDate').value = now.toISOString().split('T')[0];
-            document.getElementById('f-surveyDate').value = now.toISOString().split('T')[0];
-            document.getElementById('f-measurementTime').value = now.toTimeString().substring(0, 5);
+            const timeStr = `${String(now.getHours()).padStart(2, '0')}:${String(now.getMinutes()).padStart(2, '0')}`;
+            document.getElementById('f-measurementTime').value = timeStr;
+
+            document.getElementById('f-onePhConsumers').value = '0';
+            document.getElementById('f-indConsumers').value = '0';
+            document.getElementById('f-stwConsumers').value = '0';
+            document.getElementById('f-threePhConsumers').value = '0';
+            calculateTotalConsumers();
 
             recalculateFormLoad();
             document.getElementById('form-overlay').classList.add('active');
         }
 
-        function openEditSurveyModal(id) {
+        function editSurvey(id) {
             const records = getRecords();
-            const r = records.find(x => x.id === id);
+            const r = records.find(item => item.id === id);
             if (!r) return;
 
             document.getElementById('form-id').value = r.id;
-            document.getElementById('modal-title').textContent = 'Edit DTR Inspection: ' + r.dtrCode;
+            document.getElementById('modal-title').textContent = `Edit Inspection: ${r.dtrCode}`;
 
             document.getElementById('f-dtrCode').value = r.dtrCode || '';
             document.getElementById('f-dtrLocation').value = r.dtrLocation || '';
@@ -1416,30 +1618,35 @@
             document.getElementById('f-dtrStructure').value = r.dtrStructure || 'Double Pole (DP)';
             document.getElementById('f-gpsCoordinates').value = r.gpsCoordinates || '';
 
+            // Structure details (Point #2)
+            document.getElementById('f-ltKioskStatus').value = r.ltKioskStatus || 'Yes';
+            document.getElementById('f-lightningArresterStatus').value = r.lightningArresterStatus || 'Yes';
+            document.getElementById('f-maleFemaleStatus').value = r.maleFemaleStatus || 'Ok';
+            document.getElementById('f-socketStatus').value = r.socketStatus || 'Ok';
+            document.getElementById('f-earthingStatus').value = r.earthingStatus || 'Yes';
+            document.getElementById('f-dtrCableStatus').value = r.dtrCableStatus || 'OK';
+            document.getElementById('f-ltLineStatus').value = r.ltLineStatus || 'AB cable';
+            document.getElementById('f-ltPoleCondition').value = r.ltPoleCondition || 'Normal';
+            document.getElementById('f-ltLineWork').value = r.ltLineWork || 'None';
+
+            // Consumer details (Point #5)
+            document.getElementById('f-consumerType').value = r.consumerType || 'Village';
+            document.getElementById('f-onePhConsumers').value = r.onePhConsumers || 0;
+            document.getElementById('f-indConsumers').value = r.indConsumers || 0;
+            document.getElementById('f-stwConsumers').value = r.stwConsumers || 0;
+            document.getElementById('f-threePhConsumers').value = r.threePhConsumers || 0;
+            calculateTotalConsumers();
+
+            // Load Measurements
             document.getElementById('f-measurementDate').value = r.loadMeasurementDate || '';
             document.getElementById('f-measurementTime').value = r.loadMeasurementTime || '';
             document.getElementById('f-rCurrent').value = r.rCurrent || '';
             document.getElementById('f-yCurrent').value = r.yCurrent || '';
             document.getElementById('f-bCurrent').value = r.bCurrent || '';
             document.getElementById('f-nCurrent').value = r.nCurrent || '';
-
-            document.getElementById('f-ltProtection').value = r.ltProtection || '160A HRC Fuse';
-            document.getElementById('f-ltProtectionStatus').value = r.ltProtectionStatus || 'Ok';
-            document.getElementById('f-breatherCondition').value = r.breatherCondition || 'Good (Blue)';
-            document.getElementById('f-oilLeakage').value = r.oilLeakage || 'None';
-            document.getElementById('f-bodyEarthing').value = r.bodyEarthing || 'Connected (Good)';
-            document.getElementById('f-neutralEarthing').value = r.neutralEarthing || 'Connected (Good)';
-
-            document.getElementById('f-ltPoleCondition').value = r.ltPoleCondition || 'Normal';
-            document.getElementById('f-ltLineWork').value = r.ltLineWork || 'None';
-
-            document.getElementById('f-surveyorName').value = r.surveyorName || '';
-            document.getElementById('f-surveyorDesignation').value = r.surveyorDesignation || 'Junior Engineer';
-            document.getElementById('f-surveyAgency').value = r.surveyAgency || '';
-            document.getElementById('f-surveyDate').value = r.surveyDate || '';
-            document.getElementById('f-supervisorName').value = r.supervisorName || '';
-            document.getElementById('f-consumerType').value = r.consumerType || 'Village';
             document.getElementById('f-remarks').value = r.remarks || '';
+
+            document.getElementById('modal-surveyor-note').textContent = `Surveyor: ${r.surveyorName || 'Surveyor'} (${r.surveyorDesignation || 'Engineer'})`;
 
             recalculateFormLoad();
             document.getElementById('form-overlay').classList.add('active');
@@ -1451,110 +1658,152 @@
 
         function handleFormSubmit(e) {
             e.preventDefault();
-            const id = document.getElementById('form-id').value || ('dtr_' + Date.now());
+            const id = document.getElementById('form-id').value;
             const records = getRecords();
+            const prof = getUserProfile();
 
-            const newRecord = {
-                id: id,
+            const c1 = parseInt(document.getElementById('f-onePhConsumers').value) || 0;
+            const ind = parseInt(document.getElementById('f-indConsumers').value) || 0;
+            const stw = parseInt(document.getElementById('f-stwConsumers').value) || 0;
+            const c3 = parseInt(document.getElementById('f-threePhConsumers').value) || 0;
+            const totalCons = c1 + ind + stw + c3;
+
+            const entry = {
+                id: id || ('dtr_' + Date.now()),
                 dtrCode: document.getElementById('f-dtrCode').value.trim(),
                 dtrLocation: document.getElementById('f-dtrLocation').value.trim(),
                 dtrCapacity: document.getElementById('f-dtrCapacity').value,
                 dtrStructure: document.getElementById('f-dtrStructure').value,
                 gpsCoordinates: document.getElementById('f-gpsCoordinates').value.trim(),
+
+                // DTR Structure Details (Point #2)
+                ltKioskStatus: document.getElementById('f-ltKioskStatus').value,
+                lightningArresterStatus: document.getElementById('f-lightningArresterStatus').value,
+                maleFemaleStatus: document.getElementById('f-maleFemaleStatus').value,
+                socketStatus: document.getElementById('f-socketStatus').value,
+                earthingStatus: document.getElementById('f-earthingStatus').value,
+                dtrCableStatus: document.getElementById('f-dtrCableStatus').value,
+                ltLineStatus: document.getElementById('f-ltLineStatus').value,
+                ltPoleCondition: document.getElementById('f-ltPoleCondition').value,
+                ltLineWork: document.getElementById('f-ltLineWork').value,
+
+                // Consumer Details (Point #5)
+                consumerType: document.getElementById('f-consumerType').value,
+                onePhConsumers: c1,
+                indConsumers: ind,
+                stwConsumers: stw,
+                threePhConsumers: c3,
+                totalConsumers: totalCons,
+
+                // Load Measurements
                 loadMeasurementDate: document.getElementById('f-measurementDate').value,
                 loadMeasurementTime: document.getElementById('f-measurementTime').value,
                 rCurrent: document.getElementById('f-rCurrent').value || '0',
                 yCurrent: document.getElementById('f-yCurrent').value || '0',
                 bCurrent: document.getElementById('f-bCurrent').value || '0',
                 nCurrent: document.getElementById('f-nCurrent').value || '0',
-                ltProtection: document.getElementById('f-ltProtection').value,
-                ltProtectionStatus: document.getElementById('f-ltProtectionStatus').value,
-                breatherCondition: document.getElementById('f-breatherCondition').value,
-                oilLeakage: document.getElementById('f-oilLeakage').value,
-                bodyEarthing: document.getElementById('f-bodyEarthing').value,
-                neutralEarthing: document.getElementById('f-neutralEarthing').value,
-                ltPoleCondition: document.getElementById('f-ltPoleCondition').value,
-                ltLineWork: document.getElementById('f-ltLineWork').value,
-                surveyorName: document.getElementById('f-surveyorName').value.trim(),
-                surveyorDesignation: document.getElementById('f-surveyorDesignation').value,
-                surveyAgency: document.getElementById('f-surveyAgency').value.trim(),
-                surveyDate: document.getElementById('f-surveyDate').value,
-                supervisorName: document.getElementById('f-supervisorName').value.trim(),
-                consumerType: document.getElementById('f-consumerType').value,
                 remarks: document.getElementById('f-remarks').value.trim(),
-                updatedAt: Date.now()
+
+                // User Device Profile Attribution (Point #3)
+                surveyorName: prof.name,
+                surveyorDesignation: prof.designation,
+                createdAt: id ? (records.find(item => item.id === id)?.createdAt || Date.now()) : Date.now()
             };
 
-            const index = records.findIndex(x => x.id === id);
-            if (index >= 0) {
-                records[index] = { ...records[index], ...newRecord };
-                showToast('DTR Survey updated successfully!');
+            if (id) {
+                const idx = records.findIndex(item => item.id === id);
+                if (idx !== -1) records[idx] = entry;
             } else {
-                newRecord.createdAt = Date.now();
-                records.unshift(newRecord);
-                showToast('New DTR Survey saved!');
+                records.unshift(entry);
             }
 
             saveRecords(records);
             closeFormModal();
+            showToast(`✅ Inspection ${entry.dtrCode} saved successfully!`);
         }
 
-        // View Modal
-        function openDetailModal(id) {
+        function deleteSurvey(id) {
+            if (!confirm('Are you sure you want to delete this inspection record?')) return;
+            let records = getRecords();
+            records = records.filter(item => item.id !== id);
+            saveRecords(records);
+            showToast('🗑️ Inspection record deleted.');
+        }
+
+        // Detail Modal View
+        function viewDetail(id) {
             const records = getRecords();
-            const r = records.find(x => x.id === id);
+            const r = records.find(item => item.id === id);
             if (!r) return;
 
             const rated = getRatedCurrent(r.dtrCapacity);
-            const maxCurrent = Math.max(parseFloat(r.rCurrent) || 0, parseFloat(r.yCurrent) || 0, parseFloat(r.bCurrent) || 0);
-            const loadPct = ((maxCurrent / rated) * 100).toFixed(1);
+            const maxPh = Math.max(parseFloat(r.rCurrent)||0, parseFloat(r.yCurrent)||0, parseFloat(r.bCurrent)||0);
+            const pct = rated > 0 ? ((maxPh / rated) * 100).toFixed(1) : 0;
+            const totalCons = r.totalConsumers || ((parseInt(r.onePhConsumers)||0) + (parseInt(r.indConsumers)||0) + (parseInt(r.stwConsumers)||0) + (parseInt(r.threePhConsumers)||0));
 
-            document.getElementById('detail-title').textContent = `${r.dtrCode} — ${r.dtrCapacity} kVA`;
-            document.getElementById('detail-subtitle').textContent = `Location: ${r.dtrLocation || 'Not specified'}`;
+            document.getElementById('detail-title').textContent = `${r.dtrCode} Inspection Report`;
+            document.getElementById('detail-subtitle').textContent = `Location: ${r.dtrLocation} | Rated: ${rated.toFixed(1)}A | Load: ${pct}%`;
 
             document.getElementById('detail-body').innerHTML = `
-                <div class="form-section-card tone-sage">
-                    <h4 style="font-size: 0.9rem; font-weight: 700; margin-bottom: 8px;">⚡ Electrical Load Diagnostic</h4>
-                    <div class="detail-item-row"><span class="d-label">Rated Full-Load Current:</span><span class="d-val">${rated.toFixed(1)} A</span></div>
-                    <div class="detail-item-row"><span class="d-label">Max Phase Current:</span><span class="d-val">${maxCurrent.toFixed(1)} A (${loadPct}% Load)</span></div>
-                    <div class="detail-item-row"><span class="d-label">Phase Measurements:</span><span class="d-val">R: ${r.rCurrent}A | Y: ${r.yCurrent}A | B: ${r.bCurrent}A | N: ${r.nCurrent}A</span></div>
-                    <div class="detail-item-row"><span class="d-label">Measurement Time:</span><span class="d-val">${r.loadMeasurementDate || ''} ${r.loadMeasurementTime || ''}</span></div>
+                <!-- 1. DTR Details -->
+                <div class="detail-section-block">
+                    <div class="detail-section-title">01. Transformer & Location</div>
+                    <div class="detail-item-row"><span class="d-label">DTR Code</span><span class="d-val">${escapeHtml(r.dtrCode)}</span></div>
+                    <div class="detail-item-row"><span class="d-label">Location / Substation</span><span class="d-val">${escapeHtml(r.dtrLocation)}</span></div>
+                    <div class="detail-item-row"><span class="d-label">Capacity</span><span class="d-val">${r.dtrCapacity} kVA (Rated: ${rated.toFixed(1)} A)</span></div>
+                    <div class="detail-item-row"><span class="d-label">Mounting Structure</span><span class="d-val">${r.dtrStructure || 'DP'}</span></div>
+                    <div class="detail-item-row"><span class="d-label">GPS Coordinates</span><span class="d-val">${r.gpsCoordinates || 'Not recorded'}</span></div>
                 </div>
 
-                <div class="form-section-card tone-sky" style="margin-top: 10px;">
-                    <h4 style="font-size: 0.9rem; font-weight: 700; margin-bottom: 8px;">🛡️ Protection & Structure</h4>
-                    <div class="detail-item-row"><span class="d-label">Structure Type:</span><span class="d-val">${r.dtrStructure}</span></div>
-                    <div class="detail-item-row"><span class="d-label">LT Protection:</span><span class="d-val">${r.ltProtection} (${r.ltProtectionStatus})</span></div>
-                    <div class="detail-item-row"><span class="d-label">Breather Silica Gel:</span><span class="d-val">${r.breatherCondition}</span></div>
-                    <div class="detail-item-row"><span class="d-label">Oil Leakage & Level:</span><span class="d-val">${r.oilLeakage} (${r.oilLevel || 'Normal'})</span></div>
-                    <div class="detail-item-row"><span class="d-label">Body & Neutral Earthing:</span><span class="d-val">Body: ${r.bodyEarthing} | Neutral: ${r.neutralEarthing}</span></div>
-                    <div class="detail-item-row"><span class="d-label">LT Line & Pole:</span><span class="d-val">${r.ltPoleCondition} (${r.ltLineWork})</span></div>
+                <!-- 2. DTR Structure Details (Point #2) -->
+                <div class="detail-section-block">
+                    <div class="detail-section-title">02. DTR Structure Details</div>
+                    <div class="detail-item-row"><span class="d-label">LT Kiosk Status</span><span class="d-val">${r.ltKioskStatus || 'Yes'}</span></div>
+                    <div class="detail-item-row"><span class="d-label">Lightning Arrester Status</span><span class="d-val">${r.lightningArresterStatus || 'Yes'}</span></div>
+                    <div class="detail-item-row"><span class="d-label">Male Female Status</span><span class="d-val">${r.maleFemaleStatus || 'Ok'}</span></div>
+                    <div class="detail-item-row"><span class="d-label">Socket Status</span><span class="d-val">${r.socketStatus || 'Ok'}</span></div>
+                    <div class="detail-item-row"><span class="d-label">Earthing</span><span class="d-val">${r.earthingStatus || 'Yes'}</span></div>
+                    <div class="detail-item-row"><span class="d-label">DTR Cable Status</span><span class="d-val">${r.dtrCableStatus || 'OK'}</span></div>
+                    <div class="detail-item-row"><span class="d-label">LT Line Status</span><span class="d-val">${r.ltLineStatus || 'AB cable'}</span></div>
+                    <div class="detail-item-row"><span class="d-label">LT Pole Condition</span><span class="d-val">${r.ltPoleCondition || 'Normal'}</span></div>
+                    <div class="detail-item-row"><span class="d-label">LT Line Work</span><span class="d-val">${r.ltLineWork || 'None'}</span></div>
                 </div>
 
-                <div class="form-section-card tone-lavender" style="margin-top: 10px;">
-                    <h4 style="font-size: 0.9rem; font-weight: 700; margin-bottom: 8px;">👷 Survey Team & Approver</h4>
-                    <div class="detail-item-row"><span class="d-label">Surveyor (Who surveyed):</span><span class="d-val">${r.surveyorName || 'Not assigned'} (${r.surveyorDesignation})</span></div>
-                    <div class="detail-item-row"><span class="d-label">Survey Agency / Feeder:</span><span class="d-val">${r.surveyAgency || 'N/A'}</span></div>
-                    <div class="detail-item-row"><span class="d-label">Survey Date:</span><span class="d-val">${r.surveyDate || 'N/A'}</span></div>
-                    <div class="detail-item-row"><span class="d-label">Supervisor In-Charge:</span><span class="d-val">${r.supervisorName || 'N/A'}</span></div>
-                    <div class="detail-item-row"><span class="d-label">Consumer Type:</span><span class="d-val">${r.consumerType}</span></div>
-                    ${r.gpsCoordinates ? `<div class="detail-item-row"><span class="d-label">GPS:</span><span class="d-val"><a href="https://maps.google.com/?q=${encodeURIComponent(r.gpsCoordinates)}" target="_blank" style="color: var(--green-primary); font-weight: bold;">📍 ${r.gpsCoordinates} (Open Map)</a></span></div>` : ''}
-                    ${r.remarks ? `<div class="detail-item-row"><span class="d-label">Remarks:</span><span class="d-val">${r.remarks}</span></div>` : ''}
+                <!-- 3. Consumer Details (Point #5) -->
+                <div class="detail-section-block" style="background: #FFF8F6; border-color: var(--coral-border);">
+                    <div class="detail-section-title" style="color: var(--coral-text);">03. Consumer Breakdown</div>
+                    <div class="detail-item-row"><span class="d-label">Type of DTR Consumer</span><span class="d-val" style="color: #991B1B;">${r.consumerType || 'Village'}</span></div>
+                    <div class="detail-item-row"><span class="d-label">1 PH Consumer</span><span class="d-val">${r.onePhConsumers || 0}</span></div>
+                    <div class="detail-item-row"><span class="d-label">IND</span><span class="d-val">${r.indConsumers || 0}</span></div>
+                    <div class="detail-item-row"><span class="d-label">STW</span><span class="d-val">${r.stwConsumers || 0}</span></div>
+                    <div class="detail-item-row"><span class="d-label">3PH Consumer</span><span class="d-val">${r.threePhConsumers || 0}</span></div>
+                    <div class="detail-item-row"><span class="d-label" style="font-weight: 800; color: var(--coral-text);">Total Connected Consumers</span><span class="d-val" style="font-size: 1rem; color: #991B1B;">${totalCons}</span></div>
+                </div>
+
+                <!-- 4. Load & Current Measurements -->
+                <div class="detail-section-block">
+                    <div class="detail-section-title">04. Load & Current Measurements</div>
+                    <div class="detail-item-row"><span class="d-label">Measurement Time</span><span class="d-val">${r.loadMeasurementDate || ''} ${r.loadMeasurementTime || ''}</span></div>
+                    <div class="detail-item-row"><span class="d-label" style="color:#DC2626;">R Phase Current</span><span class="d-val" style="color:#DC2626;">${r.rCurrent || 0} A</span></div>
+                    <div class="detail-item-row"><span class="d-label" style="color:#D97706;">Y Phase Current</span><span class="d-val" style="color:#D97706;">${r.yCurrent || 0} A</span></div>
+                    <div class="detail-item-row"><span class="d-label" style="color:#2563EB;">B Phase Current</span><span class="d-val" style="color:#2563EB;">${r.bCurrent || 0} A</span></div>
+                    <div class="detail-item-row"><span class="d-label">Neutral Current</span><span class="d-val">${r.nCurrent || 0} A</span></div>
+                    <div class="detail-item-row"><span class="d-label">Calculated Loading</span><span class="d-val">${pct}%</span></div>
+                </div>
+
+                <!-- 5. Surveyor Attribution -->
+                <div class="detail-section-block" style="background: #F8F5FF; border-color: var(--lavender-border);">
+                    <div class="detail-section-title" style="color: var(--lavender-text);">05. Surveyor Attribution</div>
+                    <div class="detail-item-row"><span class="d-label">Inspected By</span><span class="d-val">${escapeHtml(r.surveyorName || 'Surveyor')}</span></div>
+                    <div class="detail-item-row"><span class="d-label">Designation</span><span class="d-val">${escapeHtml(r.surveyorDesignation || 'Engineer')}</span></div>
+                    <div class="detail-item-row"><span class="d-label">Remarks</span><span class="d-val">${escapeHtml(r.remarks || 'None')}</span></div>
                 </div>
             `;
 
-            document.getElementById('detail-btn-wa').onclick = () => shareWhatsApp(id);
-            document.getElementById('detail-btn-email').onclick = () => shareEmail(id);
-            document.getElementById('detail-btn-edit').onclick = () => {
-                closeDetailModal();
-                openEditSurveyModal(id);
-            };
-            document.getElementById('detail-btn-delete').onclick = () => {
-                if (confirm(`Are you sure you want to delete inspection record for ${r.dtrCode}?`)) {
-                    deleteSurvey(id);
-                    closeDetailModal();
-                }
-            };
+            document.getElementById('detail-btn-wa').onclick = () => shareWhatsApp(r.id);
+            document.getElementById('detail-btn-email').onclick = () => shareEmail(r.id);
+            document.getElementById('detail-btn-edit').onclick = () => { closeDetailModal(); editSurvey(r.id); };
+            document.getElementById('detail-btn-delete').onclick = () => { closeDetailModal(); deleteSurvey(r.id); };
 
             document.getElementById('detail-overlay').classList.add('active');
         }
@@ -1563,150 +1812,199 @@
             document.getElementById('detail-overlay').classList.remove('active');
         }
 
-        function deleteSurvey(id) {
-            const records = getRecords().filter(x => x.id !== id);
-            saveRecords(records);
-            showToast('Inspection deleted.');
-        }
-
-        // WhatsApp Formatted Sharing
+        // WhatsApp Share Generator
         function shareWhatsApp(id) {
             const records = getRecords();
-            const r = records.find(x => x.id === id);
+            const r = records.find(item => item.id === id);
             if (!r) return;
 
             const rated = getRatedCurrent(r.dtrCapacity);
-            const maxCur = Math.max(parseFloat(r.rCurrent) || 0, parseFloat(r.yCurrent) || 0, parseFloat(r.bCurrent) || 0);
-            const loadPct = ((maxCur / rated) * 100).toFixed(1);
+            const maxPh = Math.max(parseFloat(r.rCurrent)||0, parseFloat(r.yCurrent)||0, parseFloat(r.bCurrent)||0);
+            const pct = rated > 0 ? ((maxPh / rated) * 100).toFixed(1) : 0;
+            const totalCons = r.totalConsumers || ((parseInt(r.onePhConsumers)||0) + (parseInt(r.indConsumers)||0) + (parseInt(r.stwConsumers)||0) + (parseInt(r.threePhConsumers)||0));
 
-            const text = 
-`⚡ *DTR & LT INSPECTION REPORT*
-━━━━━━━━━━━━━━━━━━━
-📍 *DTR Code:* ${r.dtrCode}
-🏢 *Location:* ${r.dtrLocation || 'N/A'}
-⚡ *Capacity:* ${r.dtrCapacity} kVA | *Type:* ${r.dtrStructure}
-📅 *Date/Time:* ${r.loadMeasurementDate} ${r.loadMeasurementTime}
-━━━━━━━━━━━━━━━━━━━
-📊 *CURRENT MEASUREMENTS:*
-🔴 R Phase: *${r.rCurrent} A*
-🟡 Y Phase: *${r.yCurrent} A*
-🔵 B Phase: *${r.bCurrent} A*
-⚪ Neutral: *${r.nCurrent} A*
-📈 *Load:* *${loadPct}%* (${loadPct >= 85 ? '⚠️ OVERLOAD' : 'Balanced'})
-━━━━━━━━━━━━━━━━━━━
-🛡️ *PROTECTION & HARDWARE:*
-• LT Protection: ${r.ltProtection} (${r.ltProtectionStatus})
-• Breather: ${r.breatherCondition}
-• Oil Leakage: ${r.oilLeakage}
-• Body Earthing: ${r.bodyEarthing}
-• Neutral Earthing: ${r.neutralEarthing}
-• LT Pole Condition: ${r.ltPoleCondition}
-• Work Required: ${r.ltLineWork}
-👥 *Consumer Type:* ${r.consumerType}
-━━━━━━━━━━━━━━━━━━━
-👷 *Surveyor:* ${r.surveyorName || 'N/A'} (${r.surveyorDesignation})
-🏢 *Agency / Feeder:* ${r.surveyAgency || 'N/A'}
-🧑‍💼 *Supervisor:* ${r.supervisorName || 'N/A'}
-${r.remarks ? `📝 *Remarks:* ${r.remarks}\n` : ''}━━━━━━━━━━━━━━━━━━━
-Generated via DTR Survey App`;
+            const msg = `⚡ *DTR INSPECTION REPORT* ⚡\n` +
+                `📋 *DTR Code:* ${r.dtrCode}\n` +
+                `📍 *Location:* ${r.dtrLocation}\n` +
+                `⚡ *Capacity:* ${r.dtrCapacity} kVA (Rated: ${rated.toFixed(1)}A)\n` +
+                `🏗️ *Structure:* ${r.dtrStructure || 'DP'}\n` +
+                `📍 *GPS:* ${r.gpsCoordinates || 'N/A'}\n\n` +
+                `*DTR STRUCTURE DETAILS:*\n` +
+                `• LT Kiosk: ${r.ltKioskStatus || 'Yes'}\n` +
+                `• Lightning Arrester: ${r.lightningArresterStatus || 'Yes'}\n` +
+                `• Male Female: ${r.maleFemaleStatus || 'Ok'}\n` +
+                `• Socket: ${r.socketStatus || 'Ok'}\n` +
+                `• Earthing: ${r.earthingStatus || 'Yes'}\n` +
+                `• DTR Cable: ${r.dtrCableStatus || 'OK'}\n` +
+                `• LT Line: ${r.ltLineStatus || 'AB cable'}\n\n` +
+                `*CONSUMER DETAILS:*\n` +
+                `• Type: ${r.consumerType || 'Village'}\n` +
+                `• 1PH: ${r.onePhConsumers||0} | IND: ${r.indConsumers||0} | STW: ${r.stwConsumers||0} | 3PH: ${r.threePhConsumers||0}\n` +
+                `• Total Consumers: ${totalCons}\n\n` +
+                `*LOAD MEASUREMENTS:*\n` +
+                `🔴 R: ${r.rCurrent||0}A | 🟡 Y: ${r.yCurrent||0}A | 🔵 B: ${r.bCurrent||0}A | ⚪ N: ${r.nCurrent||0}A\n` +
+                `📈 Load: ${pct}% ${pct > 85 ? '⚠️ OVERLOAD' : '✅ Balanced'}\n\n` +
+                `👤 *Surveyor:* ${r.surveyorName} (${r.surveyorDesignation})\n` +
+                `📝 *Remarks:* ${r.remarks || 'None'}`;
 
-            const url = `https://api.whatsapp.com/send?text=${encodeURIComponent(text)}`;
+            const url = `https://wa.me/?text=${encodeURIComponent(msg)}`;
             window.open(url, '_blank');
         }
 
-        // Email Sharing
+        // Email Share
         function shareEmail(id) {
             const records = getRecords();
-            const r = records.find(x => x.id === id);
+            const r = records.find(item => item.id === id);
             if (!r) return;
 
-            const subject = `DTR Survey Report - ${r.dtrCode} (${r.dtrCapacity} kVA)`;
-            const body = 
-`DTR & LT INSPECTION REPORT
---------------------------------------
-DTR Code: ${r.dtrCode}
-Location: ${r.dtrLocation}
-Capacity: ${r.dtrCapacity} kVA (${r.dtrStructure})
-Measured: ${r.loadMeasurementDate} ${r.loadMeasurementTime}
+            const rated = getRatedCurrent(r.dtrCapacity);
+            const maxPh = Math.max(parseFloat(r.rCurrent)||0, parseFloat(r.yCurrent)||0, parseFloat(r.bCurrent)||0);
+            const pct = rated > 0 ? ((maxPh / rated) * 100).toFixed(1) : 0;
+            const totalCons = r.totalConsumers || ((parseInt(r.onePhConsumers)||0) + (parseInt(r.indConsumers)||0) + (parseInt(r.stwConsumers)||0) + (parseInt(r.threePhConsumers)||0));
 
-CURRENT MEASUREMENTS:
-R Phase: ${r.rCurrent} A
-Y Phase: ${r.yCurrent} A
-B Phase: ${r.bCurrent} A
-Neutral: ${r.nCurrent} A
-
-PROTECTION & HARDWARE:
-LT Protection: ${r.ltProtection} (${r.ltProtectionStatus})
-Breather: ${r.breatherCondition}
-Oil Leakage: ${r.oilLeakage}
-Body Earthing: ${r.bodyEarthing}
-Neutral Earthing: ${r.neutralEarthing}
-LT Pole: ${r.ltPoleCondition}
-Work Required: ${r.ltLineWork}
-
-SURVEY TEAM:
-Surveyor: ${r.surveyorName} (${r.surveyorDesignation})
-Agency / Feeder: ${r.surveyAgency}
-Supervisor: ${r.supervisorName}
-Remarks: ${r.remarks}
-`;
+            const subject = `DTR Inspection Report: ${r.dtrCode} (${r.dtrLocation})`;
+            const body = `DTR INSPECTION SUMMARY\n\n` +
+                `DTR Code: ${r.dtrCode}\n` +
+                `Location: ${r.dtrLocation}\n` +
+                `Capacity: ${r.dtrCapacity} kVA (Rated: ${rated.toFixed(1)}A)\n` +
+                `Structure: ${r.dtrStructure}\n` +
+                `GPS: ${r.gpsCoordinates}\n\n` +
+                `DTR STRUCTURE DETAILS:\n` +
+                `- LT Kiosk: ${r.ltKioskStatus}\n` +
+                `- Lightning Arrester: ${r.lightningArresterStatus}\n` +
+                `- Male Female: ${r.maleFemaleStatus}\n` +
+                `- Socket: ${r.socketStatus}\n` +
+                `- Earthing: ${r.earthingStatus}\n` +
+                `- DTR Cable: ${r.dtrCableStatus}\n` +
+                `- LT Line: ${r.ltLineStatus}\n\n` +
+                `CONSUMER DETAILS:\n` +
+                `- Type of Consumer: ${r.consumerType}\n` +
+                `- 1PH: ${r.onePhConsumers} | IND: ${r.indConsumers} | STW: ${r.stwConsumers} | 3PH: ${r.threePhConsumers}\n` +
+                `- Total Consumers: ${totalCons}\n\n` +
+                `LOAD MEASUREMENTS:\n` +
+                `R: ${r.rCurrent}A, Y: ${r.yCurrent}A, B: ${r.bCurrent}A, Neutral: ${r.nCurrent}A\n` +
+                `Calculated Load: ${pct}%\n\n` +
+                `Surveyor: ${r.surveyorName} (${r.surveyorDesignation})\n` +
+                `Remarks: ${r.remarks}`;
 
             window.location.href = `mailto:?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
         }
 
-        // CSV Export
+        // CSV Export for Excel
         function exportToCSV() {
             const records = getRecords();
-            if (records.length === 0) {
-                alert('No inspection records to export.');
+            if (!records || records.length === 0) {
+                alert('No survey records to export.');
                 return;
             }
 
             const headers = [
-                "DTR Code", "Location", "Capacity (kVA)", "Structure", "GPS Coordinates",
-                "Measurement Date", "Measurement Time", "R Current (A)", "Y Current (A)",
-                "B Current (A)", "Neutral Current (A)", "LT Protection", "Protection Status",
-                "Breather Condition", "Oil Leakage", "Body Earthing", "Neutral Earthing",
-                "LT Pole Condition", "LT Line Work", "Consumer Type", "Who Will Survey (Surveyor)",
-                "Surveyor Designation", "Survey Agency / Feeder", "Survey Date", "Supervisor In-Charge", "Remarks"
+                "DTR Code",
+                "Location / Substation",
+                "Capacity (kVA)",
+                "Rated Current (A)",
+                "Mounting Structure",
+                "GPS Coordinates",
+                "LT Kiosk Status",
+                "Lightning Arrester Status",
+                "Male Female Status",
+                "Socket Status",
+                "Earthing",
+                "DTR Cable Status",
+                "LT Line Status",
+                "LT Pole Condition",
+                "LT Line Work",
+                "Consumer Type",
+                "1 PH Consumers",
+                "IND Consumers",
+                "STW Consumers",
+                "3 PH Consumers",
+                "Total Consumers",
+                "Date",
+                "Time",
+                "R Phase (A)",
+                "Y Phase (A)",
+                "B Phase (A)",
+                "Neutral (A)",
+                "Loading %",
+                "Surveyor Name",
+                "Designation",
+                "Remarks"
             ];
 
-            const rows = records.map(r => [
-                r.dtrCode, r.dtrLocation, r.dtrCapacity, r.dtrStructure, r.gpsCoordinates,
-                r.loadMeasurementDate, r.loadMeasurementTime, r.rCurrent, r.yCurrent,
-                r.bCurrent, r.nCurrent, r.ltProtection, r.ltProtectionStatus,
-                r.breatherCondition, r.oilLeakage, r.bodyEarthing, r.neutralEarthing,
-                r.ltPoleCondition, r.ltLineWork, r.consumerType, r.surveyorName,
-                r.surveyorDesignation, r.surveyAgency, r.surveyDate, r.supervisorName, r.remarks
-            ]);
+            const csvRows = [];
+            csvRows.push(headers.map(h => `"${h}"`).join(","));
 
-            let csvContent = "\uFEFF" + headers.map(h => `"${h.replace(/"/g, '""')}"`).join(",") + "\n";
-            rows.forEach(row => {
-                csvContent += row.map(val => `"${(val || '').toString().replace(/"/g, '""')}"`).join(",") + "\n";
+            records.forEach(r => {
+                const rated = getRatedCurrent(r.dtrCapacity);
+                const maxPh = Math.max(parseFloat(r.rCurrent)||0, parseFloat(r.yCurrent)||0, parseFloat(r.bCurrent)||0);
+                const pct = rated > 0 ? ((maxPh / rated) * 100).toFixed(1) : '0';
+                const totalCons = r.totalConsumers || ((parseInt(r.onePhConsumers)||0) + (parseInt(r.indConsumers)||0) + (parseInt(r.stwConsumers)||0) + (parseInt(r.threePhConsumers)||0));
+
+                const row = [
+                    r.dtrCode || '',
+                    r.dtrLocation || '',
+                    r.dtrCapacity || '',
+                    rated.toFixed(1),
+                    r.dtrStructure || '',
+                    r.gpsCoordinates || '',
+                    r.ltKioskStatus || '',
+                    r.lightningArresterStatus || '',
+                    r.maleFemaleStatus || '',
+                    r.socketStatus || '',
+                    r.earthingStatus || '',
+                    r.dtrCableStatus || '',
+                    r.ltLineStatus || '',
+                    r.ltPoleCondition || '',
+                    r.ltLineWork || '',
+                    r.consumerType || '',
+                    r.onePhConsumers || 0,
+                    r.indConsumers || 0,
+                    r.stwConsumers || 0,
+                    r.threePhConsumers || 0,
+                    totalCons,
+                    r.loadMeasurementDate || '',
+                    r.loadMeasurementTime || '',
+                    r.rCurrent || 0,
+                    r.yCurrent || 0,
+                    r.bCurrent || 0,
+                    r.nCurrent || 0,
+                    `${pct}%`,
+                    r.surveyorName || '',
+                    r.surveyorDesignation || '',
+                    (r.remarks || '').replace(/"/g, '""')
+                ];
+                csvRows.push(row.map(val => `"${val}"`).join(","));
             });
 
-            const blob = new Blob([csvContent], { type: "text/csv;charset=utf-8;" });
+            const csvContent = "\uFEFF" + csvRows.join("\r\n");
+            const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
             const url = URL.createObjectURL(blob);
-            const a = document.createElement("a");
-            a.setAttribute("href", url);
-            a.setAttribute("download", `DTR_Survey_Export_${new Date().toISOString().split('T')[0]}.csv`);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `DTR_Surveys_${new Date().toISOString().slice(0,10)}.csv`;
             document.body.appendChild(a);
             a.click();
             document.body.removeChild(a);
-            showToast('Excel CSV downloaded!');
+            URL.revokeObjectURL(url);
+            showToast('📊 Exported DTR Inspection CSV to your device.');
         }
 
-        // Demo Data Reset
         function resetToSampleData() {
-            if (confirm('Reset to standard sample DTR inspection records?')) {
-                localStorage.setItem(STORAGE_KEY, JSON.stringify(SAMPLE_DATA));
-                renderSurveys();
-                showToast('Sample records restored.');
-            }
+            if (!confirm('Reload default sample DTR inspection records?')) return;
+            localStorage.setItem(STORAGE_KEY, JSON.stringify(SAMPLE_DATA));
+            renderSurveys();
+            showToast('🔄 Sample inspection data reloaded.');
         }
 
-        // Initialize on load
+        function escapeHtml(str) {
+            if (!str) return '';
+            return String(str).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+        }
+
+        // Initialize on page load
         window.addEventListener('DOMContentLoaded', () => {
+            updateProfileUI();
             renderSurveys();
         });
     </script>
