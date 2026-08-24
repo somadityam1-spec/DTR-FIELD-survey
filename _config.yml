@@ -1,0 +1,12 @@
+title: DTR SURVEY
+description: Field Supervisor DTR & LT Line Inspection Web Application
+theme: jekyll-theme-primer
+exclude:
+  - app/
+  - gradle/
+  - .gradle/
+  - .build-outputs/
+  - build.gradle.kts
+  - settings.gradle.kts
+  - gradle.properties
+  - debug.keystore.base64
