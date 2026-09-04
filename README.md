@@ -48,6 +48,26 @@ If your deployed website on GitHub Pages still shows the previous version or doe
 
 ---
 
+## 📱 How to Save the Website on Your Mobile Phone (with Official Logo)
+
+You can save this website directly to your smartphone home screen as an app icon:
+
+### On Android (Chrome / Edge / Firefox):
+1. Open your live website URL in **Google Chrome**.
+2. Tap the **three vertical dots (⋮)** in the top-right corner.
+3. Tap **"Install app"** or **"Add to Home screen"**.
+4. Confirm by tapping **Add**.
+5. The **DTR SURVEY** logo will appear directly on your phone's home screen just like a regular mobile app!
+
+### On iPhone / iPad (Safari):
+1. Open your live website URL in **Safari**.
+2. Tap the **Share button** (the square with an arrow pointing up at the bottom).
+3. Scroll down and tap **"Add to Home Screen"**.
+4. Tap **Add** in the top-right corner.
+5. The **DTR SURVEY** icon will be saved to your iOS home screen!
+
+---
+
 ## ⚡ Key Features
 
 1. **DTR Infrastructure Audit**:
